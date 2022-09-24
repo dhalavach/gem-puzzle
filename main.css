@@ -7,7 +7,7 @@ h1 {
   line-height: 75%;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 h2 {
@@ -16,7 +16,7 @@ h2 {
   font-weight: 400;
   font-size: 48px;
   line-height: 120%;
-  color: #333B41;
+  color: #333b41;
 }
 
 h3 {
@@ -26,7 +26,7 @@ h3 {
   font-size: 36px;
   line-height: 130%;
   text-align: center;
-  color: #333B41;
+  color: #333b41;
 }
 
 header {
@@ -48,7 +48,21 @@ header div {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.nav__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #f9804b;
 }
 
 .header-logo {
@@ -63,8 +77,11 @@ header div {
   font-size: 19.0145px;
   line-height: 120%;
   text-align: center;
-  color: #FFFFFF;
-  border: 1.18841px solid #FFFFFF;
+  color: #ffffff;
+  border: 1.18841px solid #ffffff;
+  background-image: url("src/bamboo.png");
+  background-repeat: no-repeat;
+  background-position: 0%;
 }
 
 #section-1 {
@@ -96,7 +113,7 @@ header div {
   top: 92px;
   border-radius: 50%;
   /* orange */
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 }
 
 #h1-accented-word {
@@ -107,7 +124,7 @@ header div {
   line-height: 75%;
   text-align: center;
   text-transform: uppercase;
-  color: #FFEE2E;
+  color: #ffee2e;
 }
 
 #section-1-main-button {
@@ -116,7 +133,7 @@ header div {
   height: 54px;
   left: calc(50% - 149px + 332px);
   top: 626px;
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 25px;
   display: flex;
   align-items: center;
@@ -131,7 +148,7 @@ header div {
   line-height: 140%;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #section-2-main {
@@ -176,7 +193,7 @@ header div {
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
-  color: #333B41;
+  color: #333b41;
 }
 
 #section-2-text h2 {
