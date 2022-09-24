@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #333B41;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: #333B41;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000000;
+  position: absolute;
+  width: 1572px;
+  height: 80px;
+  left: 28px;
+  top: 0px;
+}
+
+header div {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.header-logo {
+  box-sizing: border-box;
+  width: 72.49px;
+  height: 44.91px;
+  left: 4.75px;
+  top: 3.55px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1.18841px solid #FFFFFF;
+}
+
+#section-1 {
+  background-image: url("src/GiantPanda.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 780px;
+  width: 1600px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+
+#h1-box {
+  position: absolute;
+  width: 500.31px;
+  height: 400px;
+  left: calc(50% - 250.155px + 330.15px);
+  top: 74px;
+  z-index: 100;
+}
+
+#ellipse-box {
+  position: absolute;
+  width: 465px;
+  height: 465px;
+  left: calc(50% - 232.5px + 239.5px);
+  top: 92px;
+  border-radius: 50%;
+  /* orange */
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+#h1-accented-word {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFEE2E;
+}
+
+#section-1-main-button {
+  position: absolute;
+  width: 298px;
+  height: 54px;
+  left: calc(50% - 149px + 332px);
+  top: 626px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-1-main-button-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+#section-2-main {
+  position: absolute;
+  height: 403px;
+  left: 219px;
+  right: 220px;
+  top: 920px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#bamboo-cap {
+  width: 609px;
+  height: 403px;
+  min-width: 609px;
+  background-image: url("src/bamboo-cap.png");
+  background-size: cover;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+#section-2-text {
+  padding-left: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#section-2-text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+}
+
+#section-2-subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333B41;
+}
+
+#section-2-text h2 {
+  margin-top: 0px;
+}
+
+#section-2-flower {
+  width: 293px;
+  height: 605px;
+  background-image: url("src/flower_foto1.png");
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: 0px;
+  padding-top: 0px;
+}/*# sourceMappingURL=main.css.map */

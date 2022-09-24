@@ -1,0 +1,166 @@
+@import 'base';
+@import 'variables';
+@import 'mixins';
+
+h1 {
+    @include h1;
+}
+
+h2{
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $black-header;
+  position: absolute;
+  width: 1572px;
+  height: 80px;
+  left: 28px;
+  top: 0px;
+}
+
+header div {
+    @include header-font;
+}
+
+.header-logo {
+box-sizing: border-box;
+width: 72.49px;
+height: 44.91px;
+left: 4.75px;
+top: 3.55px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 19.0145px;
+line-height: 120%;
+text-align: center;
+color: #FFFFFF;
+border: 1.18841px solid #FFFFFF;
+}
+
+#section-1 {
+background-image:  url('src/GiantPanda.png');
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+height: 780px;
+width: 1600px;
+left: 0px;
+right: 0px;
+top: 0px;
+}
+
+#h1-box{
+position: absolute;
+width: 500.31px;
+height: 400px;
+left: calc(50% - 500.31px/2 + 330.15px);
+top: 74px;
+z-index: 100;
+}
+
+#ellipse-box{
+position: absolute;
+width: 465px;
+height: 465px;
+left: calc(50% - 465px/2 + 239.5px);
+top: 92px;
+border-radius: 50%;
+
+/* orange */
+
+background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+
+}
+
+#h1-accented-word {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 106.496px;
+line-height: 75%;
+text-align: center;
+text-transform: uppercase;
+color: #FFEE2E;
+}
+
+#section-1-main-button {
+position: absolute;
+width: 298px;
+height: 54px;
+left: calc(50% - 298px/2 + 332px);
+top: 626px;
+background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center
+
+}
+
+#section-1-main-button-text {
+@include button-font;
+}
+
+#section-2-main{
+position: absolute;
+height: 403px;
+left: 219px;
+right: 220px;
+top: 920px;
+
+display: flex;
+justify-content: space-evenly;
+
+
+}
+#bamboo-cap {
+    width: 609px;
+    height: 403px;
+    min-width: 609px;
+
+    background-image: url('src/bamboo-cap.png');
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+#section-2-text {
+    padding-left: 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+
+#section-2-text p {
+    @include smallparagraph-font;
+}
+
+#section-2-subtitle{
+    @include subtitle-font;
+} 
+
+#section-2-text h2 {
+    margin-top: 0px;
+}
+
+#section-2-flower {
+    width: 293px;
+    height: 605px;
+    background-image: url('src/flower_foto1.png');
+    //background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 0px;
+    padding-top: 0px;
+}
