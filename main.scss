@@ -404,7 +404,6 @@ header div {
     //align-self: center;
 }
 
-
 .section-4__widget-wrapper {
     width: 168px;
     height: 244px;
@@ -435,7 +434,6 @@ header div {
     border-radius: 5px;
 }
 
-
 #section-4__widget2 {
 
     background: #FFFFFF;
@@ -446,11 +444,9 @@ header div {
     background-position: center;
     background-size: auto;
     border-radius: 5px;
-
 }
 
 #section-4__widget3 {
-
     background: #FFFFFF;
     background-image: url("/src/monkey-banana.svg");
     width: 168px;
@@ -469,15 +465,9 @@ header div {
     top: 781px;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    ;
-
-
-
-
 }
 
 #section-4__button-text {
@@ -487,11 +477,60 @@ header div {
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
-    /* or 22px */
-
     text-align: center;
     text-transform: uppercase;
-
     color: #FFFFFF;
+}
+
+/* section 4 end*/
+
+/* section 5 start */
+
+#section-5 {
+    position: absolute;
+    height: 575px;
+    left: 220px;
+    right: 220px;
+    top: 3753px;
+}
+
+#section-5__testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-5__testimonial-element {
+    box-sizing: border-box;
+    width: 268px;
+    height: 391px;
+    top: 94px;
+    background: #F1F3F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section-5__testimonial-element-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-left: 63px;
+
+    span {
+        @include smallparagraph-font;
+        margin-right: 5px;
+    }
+}
+
+.section-5__testimonial-element-text {
+    @include smallparagraph-font;
+    margin: 0px 15px 19px 16px;
 
 }

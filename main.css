@@ -493,8 +493,65 @@ header div {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
-  /* or 22px */
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+/* section 4 end*/
+/* section 5 start */
+#section-5 {
+  position: absolute;
+  height: 575px;
+  left: 220px;
+  right: 220px;
+  top: 3753px;
+}
+
+#section-5__testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-5__testimonial-element {
+  box-sizing: border-box;
+  width: 268px;
+  height: 391px;
+  top: 94px;
+  background: #F1F3F2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-5__testimonial-element-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-left: 63px;
+}
+.section-5__testimonial-element-header span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+  margin-right: 5px;
+}
+
+.section-5__testimonial-element-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000000;
+  margin: 0px 15px 19px 16px;
 }/*# sourceMappingURL=main.css.map */
