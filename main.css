@@ -312,4 +312,189 @@ header div {
   right: -42px;
 }
 
-/* section 3 end*//*# sourceMappingURL=main.css.map */
+/* section 3 end*/
+/* section 4 start */
+.section-4 {
+  position: absolute;
+  height: 1004px;
+  left: 0px;
+  right: 0px;
+  top: 2609px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  opacity: 0.9;
+}
+
+.section-4__main {
+  position: absolute;
+  height: 835px;
+  left: 220px;
+  right: 220px;
+  top: 69px;
+  background: rgba(253, 253, 255, 0.52);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 20px;
+}
+
+#section-4__title {
+  position: absolute;
+  width: 463px;
+  height: 58px;
+  left: calc(50% - 231.5px + 1.5px);
+  top: 110px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: #FE9013;
+}
+
+#section-4__subtitle {
+  position: absolute;
+  width: 844px;
+  height: 29px;
+  left: calc(50% - 422px - 59px);
+  top: 198px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333B41;
+}
+
+#section-4__text1 {
+  position: absolute;
+  width: 1061px;
+  height: 21px;
+  left: calc(50% - 530.5px + 49.5px);
+  top: 267px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333B41;
+}
+
+#section-4__text2 {
+  position: absolute;
+  width: 863px;
+  height: 42px;
+  left: calc(50% - 431.5px - 49.5px);
+  top: 298px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333B41;
+}
+
+#section-4__h3 {
+  position: absolute;
+  width: 209px;
+  height: 47px;
+  left: calc(50% - 104.5px - 0.5px);
+  top: 400px;
+  color: #333B41;
+}
+
+.section-4__all-widgets-wrapper {
+  display: flex;
+  position: absolute;
+  width: 764px;
+  height: 244px;
+  top: 477px;
+  left: 209px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.section-4__widgets-arrow {
+  background-image: url("/src/vector.svg");
+  width: 69px;
+  height: 35px;
+  border: 0.5px solid #333B41;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 44px;
+}
+
+.section-4__widget-wrapper {
+  width: 168px;
+  height: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-4__widget-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333B41;
+}
+
+#section-4__widget1 {
+  background: #FFFFFF;
+  background-image: url("/src/pay.svg");
+  width: 168px;
+  height: 168px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+#section-4__widget2 {
+  background: #FFFFFF;
+  background-image: url("/src/payment-to-zoo.svg");
+  width: 168px;
+  height: 168px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius: 5px;
+}
+
+#section-4__widget3 {
+  background: #FFFFFF;
+  background-image: url("/src/monkey-banana.svg");
+  width: 168px;
+  height: 168px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius: 5px;
+}
+
+#section-4__button {
+  position: absolute;
+  width: 298px;
+  height: 54px;
+  left: calc(50% - 149px);
+  top: 781px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-4__button-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}/*# sourceMappingURL=main.css.map */
