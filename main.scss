@@ -14,6 +14,8 @@ h3 {
     @include h3;
 }
 
+/* header start */
+
 header {
     display: flex;
     flex-direction: row;
@@ -58,6 +60,11 @@ header div {
     background-repeat: no-repeat;
     background-position: 0%;
 }
+
+/* header end */
+
+
+/* section 1 start */
 
 #section-1 {
     background-image: url("src/GiantPanda.png");
@@ -121,6 +128,11 @@ header div {
     @include button-font;
 }
 
+/* section 1 end */
+
+
+/* section 2 start */
+
 #section-2-main {
     position: absolute;
     height: 403px;
@@ -131,6 +143,7 @@ header div {
     display: flex;
     justify-content: space-evenly;
 }
+
 #bamboo-cap {
     width: 609px;
     height: 403px;
@@ -171,3 +184,106 @@ header div {
     background-repeat: no-repeat;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+/* section 2 end */
+
+
+/* section 3 start */
+.section-3 {
+
+    position: absolute;
+    width: 1158px;
+    height: 872px;
+    left: calc(50% - 1158px/2 - 1px);
+    top: 1503px;
+
+    background: $white;
+}
+
+.section-3__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.section-3__image-container {
+    margin-top: 20px;
+}
+
+.section-3-image-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.section-3-image-subtitle {
+    @include smallparagraph-font;
+    margin-top: 0px;
+}
+
+.banana-bamboo-icon {
+
+    background-image: url("/src/banana-bamboo_icon.png");
+    width: 33px;
+    height: 37px;
+    // position: absolute;
+    // left: 321px;
+    //top: 376px;
+    margin-left: 321px;
+    margin-top: -50px;
+}
+
+.meat-fish-icon {
+    background-image: url("/src/meat-fish_icon.png");
+    width: 48px;
+    height: 38px;
+    margin-left: 310px;
+    margin-top: -50px;
+}
+
+#section-3-palm-foto {
+    background-image: url("/src/palm_foto.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 880px;
+    height: 460px;
+    left: -240px;
+    top: 646px;
+
+}
+
+#section-3-strelitsia1-foto {
+    background-image: url("/src/strelitzia1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 368px;
+    height: 275px;
+    left: 1012px;
+    top: 831px;
+}
+
+#section-3-arrow-left {
+    background-image: url("/src/arrow-ellipse-left.svg");
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: -82px;
+    top: 403px;
+}
+
+#section-3-arrow-right {
+    background-image: url("/src/arrow-ellipse-right.svg");
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 403px;
+    right: -42px;
+}
+
+/* section 3 end*/

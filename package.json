@@ -1,0 +1,22 @@
+{
+  "name": "zoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhalavach/zoo-test.git"
+  },
+  "author": "Dzmitry Halavach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhalavach/zoo-test/issues"
+  },
+  "homepage": "https://github.com/dhalavach/zoo-test#readme",
+  "devDependencies": {
+    "eslint": "^8.24.0"
+  }
+}
