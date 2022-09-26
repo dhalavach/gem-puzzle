@@ -734,9 +734,20 @@ header div {
 
 
 
-    span {
-        margin-left: 10px;
+    a {
+        display: inline-block;
+        padding-left: 10px;
         text-align: center;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+
+        color: #FFFFFF;
+        margin-left: 0px;
     }
 
 }
