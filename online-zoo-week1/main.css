@@ -29,6 +29,10 @@ h3 {
   color: #333b41;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /* header start */
 header {
   display: flex;
@@ -81,7 +85,7 @@ header div {
   text-align: center;
   color: #ffffff;
   border: 1.18841px solid #ffffff;
-  background-image: url("src/bamboo.png");
+  background-image: url("/online-zoo-week1/src/bamboo.png");
   background-repeat: no-repeat;
   background-position: 0%;
 }
@@ -89,7 +93,7 @@ header div {
 /* header end */
 /* section 1 start */
 #section-1 {
-  background-image: url("src/GiantPanda.png");
+  background-image: url("/online-zoo-week1/src/GiantPanda.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -212,7 +216,7 @@ header div {
   height: 605px;
   left: 1400px;
   top: 792px;
-  background-image: url("src/flower_foto1.png");
+  background-image: url("/online-zoo-week1/src/flower_foto1.png");
   background-repeat: no-repeat;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -237,6 +241,9 @@ header div {
 .section-3__image-container {
   margin-top: 20px;
 }
+.section-3__image-container img:hover {
+  transform: scale(1.03);
+}
 
 .section-3-image-title {
   font-family: "Roboto";
@@ -260,7 +267,7 @@ header div {
 }
 
 .banana-bamboo-icon {
-  background-image: url("/src/banana-bamboo_icon.png");
+  background-image: url("/online-zoo-week1/src/banana-bamboo_icon.png");
   width: 33px;
   height: 37px;
   margin-left: 321px;
@@ -268,7 +275,7 @@ header div {
 }
 
 .meat-fish-icon {
-  background-image: url("/src/meat-fish_icon.png");
+  background-image: url("/online-zoo-week1/src/meat-fish_icon.png");
   width: 48px;
   height: 38px;
   margin-left: 310px;
@@ -276,7 +283,7 @@ header div {
 }
 
 #section-3-palm-foto {
-  background-image: url("/src/palm_foto.png");
+  background-image: url("/online-zoo-week1/src/palm_foto.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 880px;
@@ -286,7 +293,7 @@ header div {
 }
 
 #section-3-strelitsia1-foto {
-  background-image: url("/src/strelitzia1.png");
+  background-image: url("/online-zoo-week1/src/strelitzia1.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 368px;
@@ -296,7 +303,7 @@ header div {
 }
 
 #section-3-arrow-left {
-  background-image: url("/src/arrow-ellipse-left.svg");
+  background-image: url("/online-zoo-week1/src/arrow-ellipse-left.svg");
   position: absolute;
   width: 62px;
   height: 62px;
@@ -305,7 +312,7 @@ header div {
 }
 
 #section-3-arrow-right {
-  background-image: url("/src/arrow-ellipse-right.svg");
+  background-image: url("/online-zoo-week1/src/arrow-ellipse-right.svg");
   position: absolute;
   width: 62px;
   height: 62px;
@@ -416,7 +423,7 @@ header div {
 }
 
 .section-4__widgets-arrow {
-  background-image: url("/src/vector.svg");
+  background-image: url("/online-zoo-week1/src/vector.svg");
   width: 69px;
   height: 35px;
   border: 0.5px solid #333B41;
@@ -445,7 +452,7 @@ header div {
 
 #section-4__widget1 {
   background: #FFFFFF;
-  background-image: url("/src/pay.svg");
+  background-image: url("/online-zoo-week1/src/pay.svg");
   width: 168px;
   height: 168px;
   background-repeat: no-repeat;
@@ -455,7 +462,7 @@ header div {
 
 #section-4__widget2 {
   background: #FFFFFF;
-  background-image: url("/src/payment-to-zoo.svg");
+  background-image: url("/online-zoo-week1/src/payment-to-zoo.svg");
   width: 168px;
   height: 168px;
   background-repeat: no-repeat;
@@ -466,7 +473,7 @@ header div {
 
 #section-4__widget3 {
   background: #FFFFFF;
-  background-image: url("/src/monkey-banana.svg");
+  background-image: url("/online-zoo-week1/src/monkey-banana.svg");
   width: 168px;
   height: 168px;
   background-repeat: no-repeat;
@@ -559,7 +566,7 @@ header div {
 }
 
 #section-5__leaf-photo {
-  background-image: url("src/section-5-leaf.png");
+  background-image: url("/online-zoo-week1/src/section-5-leaf.png");
   position: absolute;
   width: 300.92px;
   height: 295.45px;
@@ -592,7 +599,7 @@ header div {
 
 .section-5__line-scroll {
   /* slider not implemented, using static image instead */
-  background-image: url("/src/section-5-line-scroll.png");
+  background-image: url("/online-zoo-week1/src/section-5-line-scroll.png");
   position: absolute;
   width: 599px;
   height: 8px;
@@ -640,7 +647,7 @@ header div {
   text-align: center;
   color: #ffffff;
   border: 1.18841px solid #ffffff;
-  background-image: url("src/bamboo.png");
+  background-image: url("/online-zoo-week1/src/bamboo.png");
   background-repeat: no-repeat;
   background-position: 0%;
 }
@@ -698,19 +705,19 @@ header div {
 }
 
 #footer__facebook {
-  background-image: url("/src/facebook.svg");
+  background-image: url("/online-zoo-week1/src/facebook.svg");
 }
 
 #footer__twitter {
-  background-image: url("/src/twitter.svg");
+  background-image: url("/online-zoo-week1/src/twitter.svg");
 }
 
 #footer__instagram {
-  background-image: url("/src/instagram.svg");
+  background-image: url("/online-zoo-week1/src/instagram.svg");
 }
 
 #footer_youtube {
-  background-image: url("/src/youtube.svg");
+  background-image: url("/online-zoo-week1/src/youtube.svg");
 }
 
 #footer__column-2 {
