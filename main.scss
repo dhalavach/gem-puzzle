@@ -652,12 +652,14 @@ header div {
 #footer__column-1-socialmedia {
     display: flex;
     flex-direction: column;
+
     // height: auto;
     // width: auto;
 
+
 }
 
-.footer__column-1-soclialmedia-link {
+.footer__column-1-socialmedia-link {
     width: 111px;
     height: 26px;
     // background: white;
@@ -669,9 +671,41 @@ header div {
     line-height: 140%;
     /* or 22px */
 
-
     color: #FFFFFF;
+    margin-left: 0px;
+
+    img {
+        background: no-repeat;
+        background-size: auto;
+        background-position: center;
+
+    }
+
+
+
+    span {
+        margin-left: 10px;
+        text-align: center;
+    }
+
 }
+
+#footer__facebook {
+    background-image: url("/src/facebook.svg");
+}
+
+#footer__twitter {
+    background-image: url("/src/twitter.svg")
+}
+
+#footer__instagram {
+    background-image: url("/src/instagram.svg")
+}
+
+#footer_youtube {
+    background-image: url("/src/youtube.svg")
+}
+
 
 #footer__column-2 {
     display: flex;
@@ -742,4 +776,18 @@ header div {
         line-height: 140%;
         color: #4B9200;
     }
+}
+
+#footer__column-3-textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+    background: transparent;
+    resize: none;
+    border-color: $orange;
+    text-align: left;
+
 }
