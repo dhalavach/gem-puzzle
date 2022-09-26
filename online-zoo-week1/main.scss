@@ -127,6 +127,11 @@ header div {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+
+    :hover {
+        transform: scale(1.1)
+    }
 }
 
 #section-1-main-button-text {
@@ -285,6 +290,14 @@ header div {
     height: 62px;
     left: -82px;
     top: 403px;
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+
+}
+
+#section-3-arrow-left:hover {
+    transform: scale(1.1)
 }
 
 #section-3-arrow-right {
@@ -294,6 +307,13 @@ header div {
     height: 62px;
     top: 403px;
     right: -42px;
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+}
+
+#section-3-arrow-right:hover {
+    transform: scale(1.1)
 }
 
 /* section 3 end*/
@@ -478,6 +498,11 @@ header div {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+}
+
+#section-4__button:hover {
+    transform: scale(1.1)
 }
 
 #section-4__button-text {
@@ -568,11 +593,18 @@ header div {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
 
     p {
         @include button-font;
     }
+
+    :hover {
+        transform: scale(1.1)
+    }
 }
+
+
 
 .section-5__line-scroll {
     /* slider not implemented, using static image instead */
@@ -582,7 +614,12 @@ header div {
     height: 8px;
     left: 280px;
     top: 527px;
+    display: inline-block;
 
+}
+
+.section-5__line-scroll:hover {
+    transform: scale(1.1)
 }
 
 /* section 5 end */
@@ -646,6 +683,11 @@ header div {
 
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 5px;
+    border: none;
+
+    :hover {
+        transform: scale(1.1)
+    }
 }
 
 #footer__column-1-button-text {
