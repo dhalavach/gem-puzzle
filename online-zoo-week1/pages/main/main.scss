@@ -908,8 +908,15 @@ header div {
 
 }
 
+
+/* responsive design */
+
 @media only screen and (max-width: 1000px) {
     body {
         background-color: lightblue;
+
+        .section-5__testimonial-element:last-child {
+            display: none;
+        }
     }
 }

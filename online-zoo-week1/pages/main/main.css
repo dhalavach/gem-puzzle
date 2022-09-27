@@ -1236,8 +1236,12 @@ header div {
   color: #FE9013;
 }
 
+/* responsive design */
 @media only screen and (max-width: 1000px) {
   body {
     background-color: lightblue;
+  }
+  body .section-5__testimonial-element:last-child {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
