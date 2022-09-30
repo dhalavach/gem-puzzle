@@ -1,0 +1,46 @@
+/* section 1 start */
+
+.section-1__main {
+    position: absolute;
+    top: 5rem;
+    left: 0px;
+    background-image: url("/assets/images/GiantPanda.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 48.75rem;
+    width: 100%;
+}
+
+.h1-box {
+    position: absolute;
+    width: 31.25rem;
+    height: 25rem;
+    left: 50%;
+    right: 14%; //top: 74px;
+    z-index: 100;
+}
+
+.ellipse-box {
+    position: absolute;
+    width: 29rem;
+    height: 29rem;
+    left: 45%;
+    top: 12px;
+    right: 21%;
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
+
+#h1-accented-word {
+    @include h1;
+    color: $yellow;
+}
+
+.section-1-main-button {
+    margin-left: 61%;
+    margin-top: 525px;
+}
+
+
+
+/* section 1 end */

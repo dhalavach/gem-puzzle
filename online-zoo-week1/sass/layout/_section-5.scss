@@ -1,0 +1,54 @@
+/* section 5 start */
+
+.section-5 {
+    position: absolute;
+    height: 575px;
+    left: 220px;
+    right: 220px;
+    top: 3753px;
+}
+
+.section-5__testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#section-5__leaf-photo {
+    background-image: url("/assets/images/section-5-leaf.png");
+    position: absolute;
+    width: 300.92px;
+    height: 295.45px;
+    left: 1132px;
+    top: 502px;
+
+    //transform: matrix(-0.86, -0.5, -0.5, 0.86, 0, 0);
+}
+
+.section-5__button {
+    position: absolute;
+    left: 0px;
+    top: 561px;
+}
+
+
+
+.section-5__line-scroll {
+    /* slider not implemented, using static image instead */
+    background-image: url("/assets/images/section-5-line-scroll.png");
+    position: absolute;
+    width: 599px;
+    height: 8px;
+    left: 280px;
+    top: 527px;
+    display: inline-block;
+
+}
+
+.section-5__line-scroll:hover {
+    transform: scale(1.1)
+}
+
+/* section 5 end */

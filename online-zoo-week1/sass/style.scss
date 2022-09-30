@@ -1,0 +1,110 @@
+// Base
+@import "base/normalize";
+@import "base/typography";
+
+
+// Abstract
+@import "abstract/variables";
+@import "abstract/colors";
+@import "abstract/mixins";
+
+
+//Layout
+@import "layout/header";
+@import "layout/section-1";
+@import "layout/section-2";
+@import "layout/section-3";
+@import "layout/section-4";
+@import "layout/section-5";
+@import "layout/footer";
+
+
+// Components
+@import "components/button";
+@import "components/testimonial";
+@import "components/widget";
+
+// Pages
+@import "pages/donate";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    //font-size: 10px;
+    font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+h1 {
+    @include h1;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+/* responsive design */
+
+@media only screen and (max-width: $small-desktop) {
+    body {
+        background-color: lightblue;
+    }
+
+    .section-5__testimonial-element:last-child {
+        display: none;
+    }
+
+    #section-2-flower {
+        display: none;
+    }
+
+    #section-3-arrow-left {
+        margin-left: 29rem;
+        margin-top: 3.875rem;
+    }
+
+    #section-3-arrow-right {
+        margin-right: 29rem;
+        margin-top: 3.875rem;
+    }
+
+    .section-3__image-container {
+        margin-bottom: 3.875rem;
+        margin-top: 1.875rem;
+    }
+
+    .section-4__main {
+        left: 30px;
+        right: 30px;
+    }
+
+}

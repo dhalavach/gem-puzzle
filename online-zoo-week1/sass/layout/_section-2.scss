@@ -1,0 +1,63 @@
+/* section 2 start */
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 920px;
+
+}
+
+.section-2-main {
+    //position: absolute;
+    height: 403px;
+    //left: 219px;
+    //right: 220px;
+    //top: 920px;
+    //width: 73%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bamboo-cap {
+    width: 609px;
+    height: 403px;
+    min-width: 609px;
+    background-image: url("/assets/images/bamboo-cap.png");
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.section-2-text {
+    padding-left: 5.44em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-2-text p {
+    @include smallparagraph-font;
+}
+
+.section-2-subtitle {
+    @include subtitle-font;
+}
+
+.section-2-text h2 {
+    margin-top: 0px;
+}
+
+.section-2-flower {
+    //position: absolute;
+    width: 27%;
+    height: 605px;
+    //left: 1400px;
+    //top: 792px;
+    //margin-top: 0.75em;
+    background-image: url("/assets/images/flower_foto1.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* section 2 end */

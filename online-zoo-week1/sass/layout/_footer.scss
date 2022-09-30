@@ -1,0 +1,221 @@
+/* footer start */
+.footer__wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 4550px;
+    width: 1600px;
+    height: 443px;
+    background: #111115;
+
+    display: flex;
+}
+
+.footer__column {
+    flex: 1 1 0px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.footer__column-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 41px;
+    margin-left: 220px;
+}
+
+.footer__column-1-logo {
+    box-sizing: border-box;
+    //position: absolute;
+    width: 72.49px;
+    height: 44.91px;
+    //left: 220px;
+    //top: 41px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+    border: 1.18841px solid #ffffff;
+    background-image: url("/assets/images/bamboo.png");
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.footer__column-1-button {
+    width: 298px;
+    height: 54px;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__column-1-socialmedia {
+    display: flex;
+    flex-direction: column;
+
+    // height: auto;
+    // width: auto;
+
+
+}
+
+.footer__column-1-socialmedia-link {
+    width: 111px;
+    height: 26px;
+    // background: white;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    color: #FFFFFF;
+    margin-left: 0px;
+
+    img {
+        background: no-repeat;
+        background-size: auto;
+        background-position: center;
+
+    }
+
+
+
+    a {
+        display: inline-block;
+        padding-left: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+
+        color: #FFFFFF;
+        margin-left: 0px;
+    }
+
+}
+
+#footer__facebook {
+    background-image: url("/assets/images/facebook.svg");
+}
+
+#footer__twitter {
+    background-image: url("/assets/images/twitter.svg")
+}
+
+#footer__instagram {
+    background-image: url("/assets/images/instagram.svg")
+}
+
+#footer_youtube {
+    background-image: url("/assets/images/youtube.svg")
+}
+
+
+.footer__column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    //align-items: center;
+    text-align: right;
+
+}
+
+.footer__column-2-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+
+.footer__column-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__column-3-header {
+    @include subtitle-font;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.footer__designed-by {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    color: #FFFFFF;
+}
+
+.footer__input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer__designed-by-wrapper {
+    margin-top: 210px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.footer__subscribe-email-button {
+
+    background: #F1F3F2;
+    border: 1px solid #4B9200;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #4B9200;
+    }
+}
+
+.footer__column-3-input {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+    background: transparent;
+    resize: none;
+    border-color: $orange;
+    text-align: left;
+
+}
+
+/* footer ends*/
