@@ -2,9 +2,11 @@
 .section-2 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    position: absolute;
-    top: 920px;
+    //position: absolute;
+    //top: 920px;
+    max-width: $content-width;
 
 }
 
@@ -16,7 +18,8 @@
     //top: 920px;
     //width: 73%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    //align-items: baseline;
 }
 
 .bamboo-cap {
@@ -30,13 +33,16 @@
 
 .section-2-text {
     padding-left: 5.44em;
+    padding-right: 5.44rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    //align-items: baseline;
 }
 
 .section-2-text p {
     @include smallparagraph-font;
+    //text-align: left;
 }
 
 .section-2-subtitle {
@@ -53,7 +59,7 @@
     height: 605px;
     //left: 1400px;
     //top: 792px;
-    //margin-top: 0.75em;
+    margin-top: 0.75em;
     background-image: url("/assets/images/flower_foto1.png");
     background-size: auto;
     background-repeat: no-repeat;

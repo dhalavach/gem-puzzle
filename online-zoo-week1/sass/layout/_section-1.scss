@@ -1,45 +1,54 @@
 /* section 1 start */
 
 .section-1__main {
-    position: absolute;
-    top: 5rem;
-    left: 0px;
+
+
     background-image: url("/assets/images/GiantPanda.png");
     background-repeat: no-repeat;
-    background-size: auto;
-    height: 48.75rem;
-    width: 100%;
+    background-size: cover;
+    //height: 700px;
+    //width: 100%;
+    // max-width: 100%;
 }
+
+.section-1__content-box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 50%;
+
+    //overflow: hidden;
+}
+
+
 
 .h1-box {
-    position: absolute;
-    width: 31.25rem;
-    height: 25rem;
-    left: 50%;
-    right: 14%; //top: 74px;
-    z-index: 100;
-}
-
-.ellipse-box {
-    position: absolute;
     width: 29rem;
     height: 29rem;
-    left: 45%;
-    top: 12px;
-    right: 21%;
     border-radius: 50%;
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+
+    H1 {
+        //padding-top: 13%;
+        padding-left: 25%;
+    }
 }
 
+
+
 #h1-accented-word {
-    @include h1;
     color: $yellow;
 }
 
 .section-1-main-button {
-    margin-left: 61%;
-    margin-top: 525px;
+    margin-left: 120px;
+    margin-top: 2rem;
+
+
 }
+
 
 
 

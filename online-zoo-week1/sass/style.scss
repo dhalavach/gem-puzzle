@@ -10,6 +10,7 @@
 
 
 //Layout
+@import "layout/wrapper";
 @import "layout/header";
 @import "layout/section-1";
 @import "layout/section-2";
@@ -50,16 +51,6 @@ h3 {
 }
 
 
-.container {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-}
-
 
 .hidden {
     visibility: hidden;
@@ -74,10 +65,11 @@ h3 {
 
 /* responsive design */
 
-@media only screen and (max-width: $small-desktop) {
+@media only screen and (max-width: $small-desktop-width) {
     body {
         background-color: lightblue;
     }
+
 
     .section-5__testimonial-element:last-child {
         display: none;
