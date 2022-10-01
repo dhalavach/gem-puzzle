@@ -1,14 +1,9 @@
 /* section 1 start */
 
 .section-1__main {
-
-
     background-image: url("/assets/images/GiantPanda.png");
     background-repeat: no-repeat;
     background-size: cover;
-    //height: 700px;
-    //width: 100%;
-    // max-width: 100%;
 }
 
 .section-1__content-box {
@@ -18,8 +13,6 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-left: 50%;
-
-    //overflow: hidden;
 }
 
 
@@ -31,7 +24,6 @@
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 
     H1 {
-        //padding-top: 13%;
         padding-left: 25%;
     }
 }
@@ -45,11 +37,6 @@
 .section-1-main-button {
     margin-left: 120px;
     margin-top: 2rem;
-
-
 }
-
-
-
 
 /* section 1 end */

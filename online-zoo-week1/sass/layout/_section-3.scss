@@ -1,13 +1,7 @@
 /* section 3 start */
 .section-3 {
-
-    //position: absolute;
-    //width: 1158px;
-    //height: 872px;
-    //left: calc(50% - 1158px/2 - 1px);
-    //top: 1503px;
-
     background: $white;
+
 }
 
 .part-1-wrapper {
@@ -56,9 +50,6 @@
     background-image: url("/assets/images/banana-bamboo_icon.png");
     width: 33px;
     height: 37px;
-    // position: absolute;
-    // left: 321px;
-    //top: 376px;
     margin-left: 321px;
     margin-top: -50px;
 }
@@ -74,32 +65,21 @@
 #section-3-palm-foto {
     background-image: url("/assets/images/palm_foto.png");
     background-repeat: no-repeat;
-    //position: absolute;
     width: 292px;
     height: 460px;
-    //margin-left: -200px;
-    //left: -240px;
-    //top: 646px;
-
 }
 
 #section-3-strelitsia1-foto {
     background-image: url("/assets/images/strelitzia1.png");
     background-repeat: no-repeat;
-    //position: absolute;
     width: 368px;
     height: 275px;
-    //left: 1012px;
-    //top: 831px;
 }
 
 .section-3-arrow-left {
     background-image: url("/assets/images/arrow-ellipse-left.svg");
-    //position: absolute;
     width: 62px;
     height: 62px;
-    //left: -82px;
-    //top: 403px;
     display: inline-block;
     border: none;
     border-radius: 50%;
@@ -112,11 +92,8 @@
 
 .section-3-arrow-right {
     background-image: url("/assets/images/arrow-ellipse-right.svg");
-    //position: absolute;
     width: 62px;
     height: 62px;
-    //top: 403px;
-    //right: -62px;
     display: inline-block;
     border: none;
     border-radius: 50%;

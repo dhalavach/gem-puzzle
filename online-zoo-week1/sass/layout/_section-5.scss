@@ -1,15 +1,8 @@
 /* section 5 start */
 
 .section-5 {
-    //position: absolute;
-    //height: 575px;
-    //left: 220px;
-    //right: 220px;
-    //top: 3753px;
     max-width: $content-width;
     margin: auto;
-
-
 }
 
 .section-5__part-1-wrapper {
@@ -36,14 +29,9 @@
 
 #section-5__leaf-photo {
     background-image: url("/assets/images/section-5-leaf.png");
-    //position: absolute;
     width: 300.92px;
     height: 295.45px;
     margin-right: -52px;
-    //left: 1132px;
-    //top: 502px;
-
-    //transform: matrix(-0.86, -0.5, -0.5, 0.86, 0, 0);
 }
 
 .section-5__button {
@@ -59,10 +47,7 @@
     //position: absolute;
     width: 599px;
     height: 8px;
-    //left: 280px;
-    //top: 527px;
     margin-top: 20px;
-
 }
 
 .section-5__line-scroll:hover {

@@ -82,8 +82,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -454,8 +453,7 @@ header div {
   min-width: 609px;
   background-image: url("/assets/images/bamboo-cap.png");
   background-size: cover;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 
 .section-2-text {
@@ -634,8 +632,7 @@ header div {
   width: 73%;
   height: 83%;
   background: rgba(253, 253, 255, 0.52);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   border-radius: 20px;
   margin-top: 69px;
   margin-bottom: 100px;
@@ -924,7 +921,6 @@ header div {
   font-weight: 100;
   font-size: 16px;
   line-height: 130%;
-  /* identical to box height, or 21px */
   color: #ffffff;
 }
 
@@ -1165,4 +1161,6 @@ h3 {
     left: 30px;
     right: 30px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
