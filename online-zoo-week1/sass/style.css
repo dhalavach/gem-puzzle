@@ -380,6 +380,7 @@ header div {
   color: #ffffff;
   text-decoration: none;
   margin-right: 1.875em;
+  flex-shrink: 0;
 }
 
 .nav__link:hover {
@@ -405,7 +406,13 @@ header div {
 
 .menu__box {
   display: inline-flex;
-  list-style-type: none;
+  justify-content: center;
+  align-items: baseline;
+  list-style: none;
+}
+
+.menu__box li {
+  flex-shrink: 0;
 }
 
 #menu__toggle {

@@ -1,0 +1,33 @@
+%body-font {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    color: #333b41;
+}
+
+%smallparagraph-font {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #000000;
+}
+
+%button-font {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+%transition {
+    transition: all .3s ease-out;
+}
+
