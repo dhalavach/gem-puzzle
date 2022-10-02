@@ -9,15 +9,17 @@
 }
 
 .section-2-main {
-    height: 403px;
+    //height: 403px;
     display: flex;
     justify-content: space-between;
 }
 
 .bamboo-cap {
+    display: inline-block;
     width: 609px;
     height: 403px;
     min-width: 609px;
+    padding-top: 140px;
     background-image: url("/assets/images/bamboo-cap.png");
     background-size: cover;
     backdrop-filter: blur(2px);
@@ -26,6 +28,7 @@
 .section-2-text {
     padding-left: 5.44em;
     padding-right: 5.44rem;
+    padding-top: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

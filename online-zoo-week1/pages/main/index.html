@@ -13,21 +13,31 @@
 <body>
     <div class="container">
 
-        <header class="header">
-            <a href="#" class="nav__link logo">
-                PetStory Online
-            </a>
-            <a href="#" class="nav__link">About</a>
-            <a href="#" class="nav__link">Map</a>
-            <a href="#" class="nav__link">Zoos</a>
-            <a href="#" class="nav__link">Donate</a>
-            <a href="#" class="nav__link">Contact Us</a>
-            <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="nav__link">Designed
-                by
-                &copy;</a>
-        </header>
+       
+            <header class="header hamburger-menu">
+                    <a href="#" class="nav__link logo">
+                    PetStory Online
+                </a>
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
 
+                <ul class="menu__box">
 
+                    <li><a href="#" class="nav__link menu__item">About</a></li>
+                    <li><a href="#" class="nav__link menu__item">Map</a></li>
+                    <li><a href="#" class="nav__link menu__item">Zoos</a></li>
+                    <li><a href="#" class="nav__link menu__item">Donate</a></li>
+                    <li><a href="#" class="nav__link menu__item">Contact Us</a></li>
+                    <li><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                            class="nav__link menu__item">Designed
+                            by
+                            &copy;</a></li>
+                </ul>
+
+            </header>
+      
 
         <section class="section">
             <div class="wrapper">
@@ -37,7 +47,7 @@
                             <h1>WATCH <br>YOUR <span id="h1-accented-word">FAVORITE</span> ANIMAL ONLINE</h1>
                         </div>
                         <div class="section-1__button-wrapper">
-                            <button class="section-1-main-button button-large">
+                            <button class="section-1__main-button button-large">
                                 <span class="button-text">
                                     WATCH ONLINE
                                 </span>

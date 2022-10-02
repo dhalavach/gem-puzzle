@@ -18,6 +18,10 @@
 
 
 .h1-box {
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: baseline;
+    align-items: flex-end;
     width: 29rem;
     height: 29rem;
     border-radius: 50%;
@@ -34,9 +38,11 @@
     color: $yellow;
 }
 
-.section-1-main-button {
+.section-1__main-button {
     margin-left: 120px;
-    margin-top: 2rem;
+    margin-top: 60px;
+    margin-bottom: 100px;
+
 }
 
 /* section 1 end */

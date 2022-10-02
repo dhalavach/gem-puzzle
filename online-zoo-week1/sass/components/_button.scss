@@ -12,8 +12,8 @@
         @include button-font;
     }
 
-    :hover {
-        transform: scale(1.1)
+    &:hover {
+        background: $brand-active;
     }
 }
 

@@ -74,3 +74,44 @@
     text-transform: uppercase;
     color: #ffffff;
 }
+
+@mixin columns ($width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    >* {
+        flex-basis: $width;
+    }
+}
+
+@mixin media-small-desktop {
+    @media (max-width: $small-desktop-width) {
+        @content;
+    }
+}
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin media-mobile-large {
+    @media (max-width: $mobile-large-width) {
+        @content;
+    }
+}
+
+
+@mixin media-mobile-small {
+    @media (max-width: $mobile-small-width) {
+        @content;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        max-width: 500px;
+    }
+}
