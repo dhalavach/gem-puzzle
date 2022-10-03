@@ -350,6 +350,10 @@ template {
   overflow: hidden;
 }
 
+.even-columns > * {
+  flex-basis: 100%;
+}
+
 /* header start */
 .header {
   margin: auto;
@@ -475,7 +479,6 @@ header div {
 .section-2__bamboo-cap {
   width: 609px;
   height: 403px;
-  flex-shrink: 0;
   background-image: url("/assets/images/bamboo-cap.png");
   background-size: cover;
   -webkit-backdrop-filter: blur(2px);
@@ -485,7 +488,6 @@ header div {
 .section-2__text {
   margin-top: 0px;
   margin-bottom: 0px;
-  flex-grow: 0;
   padding-left: 5.44em;
   padding-right: 5.44rem;
   display: flex;
@@ -521,7 +523,7 @@ header div {
   height: 605px;
   margin-top: 0.75em;
   background-image: url("/assets/images/flower_foto1.png");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -626,7 +628,7 @@ header div {
   height: 275px;
 }
 
-.section-3-arrow-left {
+.section-3__arrow-left {
   background-image: url("/assets/images/arrow-ellipse-left.svg");
   width: 62px;
   height: 62px;
@@ -637,11 +639,11 @@ header div {
   margin-right: 20px;
 }
 
-.section-3-arrow-left:hover {
+.section-3__arrow-left:hover {
   transform: scale(1.1);
 }
 
-.section-3-arrow-right {
+.section-3__arrow-right {
   background-image: url("/assets/images/arrow-ellipse-right.svg");
   width: 62px;
   height: 62px;
@@ -652,7 +654,7 @@ header div {
   margin-right: 138px;
 }
 
-.section-3-arrow-right:hover {
+.section-3__arrow-right:hover {
   transform: scale(1.1);
 }
 
@@ -1066,6 +1068,21 @@ header div {
   align-items: center;
 }
 
+.button--mobile {
+  width: 298px;
+  height: 54px;
+}
+.button--mobile span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 .section-5__testimonial-element {
   box-sizing: border-box;
   width: 268px;
@@ -1420,5 +1437,177 @@ h3 {
   }
   .logo {
     margin-left: 80%;
+  }
+  .mobile-hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  .logo {
+    width: 50px;
+    height: 38px;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  .h1-box {
+    width: 119px;
+    height: 119px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .section-1__main {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .section-2 {
+    max-width: 414px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 0px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .section-2__text {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .section-2__bamboo-cap {
+    display: none;
+  }
+  .section-2__flower {
+    width: 100%;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .section-2__text h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .section-3__images-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-3__arrow-left,
+.section-3__arrow-right {
+    display: none;
+  }
+  .section-3__image-container {
+    margin-left: 10px;
+    margin-right: 25px;
+  }
+  .part-2-wrapper {
+    margin-top: 0px;
+  }
+  #section-3-palm-foto {
+    background-image: url("/assets/images/palm_foto_mobile.png");
+    width: 58px;
+    height: 72px;
+    background-size: cover;
+    flex-shrink: 0;
+  }
+  #section-3-strelitsia1-foto {
+    background-image: url("/assets/images/strelitzia_mobile.png");
+    width: 69px;
+    height: 71px;
+    align-self: flex-end;
+    flex-shrink: 0;
+  }
+  .section-3-button {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    width: 298px;
+    height: 54px;
+    flex-shrink: 1;
+  }
+  .section-3-button span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .section-4__main {
+    margin: 20px 10px;
+  }
+  .section-4__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+    text-align: center;
+    color: #FE9013;
+  }
+  .section-4__subtitle {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    /* or 22px */
+    text-align: left;
+    color: #333B41;
+  }
+  .section-4__text1,
+.section-4__text2 {
+    display: none;
+  }
+  .section-4__h3 {
+    margin: 20px 80px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+    color: #333B41;
+  }
+  .section-4__all-widgets-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin: 0 auto;
+  }
+  .section-4__widgets-arrow {
+    background-image: url("/assets/images/arrow-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 89px;
+    align-self: flex-end;
+    border: none;
+  }
+  .section-4__button {
+    margin: 30px 13px 40px 10px;
+    width: 298px;
+    height: 54px;
+  }
+  .section-4__button span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
   }
 }/*# sourceMappingURL=style.css.map */

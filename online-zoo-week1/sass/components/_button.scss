@@ -22,3 +22,19 @@
     justify-content: center;
     align-items: center;
 }
+
+.button--mobile {
+    width: 298px;
+    height: 54px;
+
+    span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}

@@ -101,7 +101,7 @@
     height: 275px;
 }
 
-.section-3-arrow-left {
+.section-3__arrow-left {
     background-image: url("/assets/images/arrow-ellipse-left.svg");
     width: 62px;
     height: 62px;
@@ -113,11 +113,11 @@
 
 }
 
-.section-3-arrow-left:hover {
+.section-3__arrow-left:hover {
     transform: scale(1.1)
 }
 
-.section-3-arrow-right {
+.section-3__arrow-right {
     background-image: url("/assets/images/arrow-ellipse-right.svg");
     width: 62px;
     height: 62px;
@@ -128,7 +128,7 @@
     margin-right: 138px;
 }
 
-.section-3-arrow-right:hover {
+.section-3__arrow-right:hover {
     transform: scale(1.1)
 }
 

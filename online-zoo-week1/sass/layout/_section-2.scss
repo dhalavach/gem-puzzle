@@ -17,28 +17,18 @@
 }
 
 .section-2__bamboo-cap {
-    //display: inline-block;
     width: 609px;
     height: 403px;
-    flex-shrink: 0;
-    //min-width: 609px;
-    //padding-top: 140px;
     background-image: url("/assets/images/bamboo-cap.png");
     background-size: cover;
     backdrop-filter: blur(2px);
 }
 
 .section-2__text {
-
     margin-top: 0px;
     margin-bottom: 0px;
-
-    flex-grow: 0;
-    //flex: 0 1 403px;
     padding-left: 5.44em;
     padding-right: 5.44rem;
-    // padding-top: 140px;
-    // padding-bottom: 140px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -62,7 +52,7 @@
     height: 605px;
     margin-top: 0.75em;
     background-image: url("/assets/images/flower_foto1.png");
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
