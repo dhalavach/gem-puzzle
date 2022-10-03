@@ -890,7 +890,6 @@ header div {
 }
 
 .footer__column {
-  flex: 1 1 0px;
   margin-bottom: 50px;
   margin-top: 40px;
 }
@@ -1140,6 +1139,9 @@ header div {
   .section-5__testimonial-element:last-child {
     display: none;
   }
+  .footer__column-1 {
+    margin-left: 43px;
+  }
 }
 @media screen and (max-width: 640px) {
   .header {
@@ -1253,6 +1255,9 @@ header div {
   }
   .mobile-hide {
     display: none;
+  }
+  .footer__column-1 {
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 414px) {
@@ -1535,6 +1540,20 @@ header div {
     align-self: center;
   }
   #section-5__leaf-photo {
+    display: none;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .footer__column-1-socialmedia {
+    flex-direction: row;
+  }
+  .footer__column-1-socialmedia-link {
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .footer__column-1-socialmedia-link img {
     display: none;
   }
 }

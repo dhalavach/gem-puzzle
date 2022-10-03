@@ -386,6 +386,22 @@
 
 
 
+    .footer__wrapper {
+        flex-direction: column;
+    }
 
+    .footer__column-1-socialmedia {
+        flex-direction: row;
+    }
+
+    .footer__column-1-socialmedia-link {
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 20px;
+
+        img {
+            display: none;
+        }
+    }
 
 }
