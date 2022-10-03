@@ -1,0 +1,132 @@
+
+// Small desktop or laptop
+@media screen and (max-width: $small-desktop-width) {
+    body {
+       // background-color: lightblue;
+    }
+
+    .section {
+        max-width: $small-desktop-width;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    .logo {
+        margin-left: 30px;
+        margin-top: 14px;
+        margin-left: 14px;
+    }
+
+    .nav__link {
+        margin-left: 24px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+
+    .h1-box {
+        height: 367px;
+        width: 367px;
+
+    }
+
+    .section-1__content-box {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 50%;
+        //flex-shrink: 1;
+    }
+
+    h1 {
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 85px;
+        line-height: 75%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .section-1__main-button {
+        margin-left: 0px;
+        margin-top: 40px;
+        margin-bottom: 47px;
+    }
+
+
+
+    .bamboo-cap {
+        width: 455px;
+        height: 408px;
+        min-width: 455px
+    }
+
+    .section-2-flower {
+        display: none;
+    }
+
+    .section-2-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 120%;
+        /* or 58px */
+
+
+        /* black_blue */
+
+        color: #333B41;
+    }
+
+
+
+    .section-2-subtitle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 120%;
+        color: #333B41;
+    }
+
+
+
+    .section-3__images-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .section-4__main {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 90%;
+
+    }
+
+
+    .section-5__testimonial-element:last-child {
+        display: none;
+    }
+
+}

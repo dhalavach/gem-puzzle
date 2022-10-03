@@ -24,7 +24,7 @@ html {
 
 body {
     margin: 0;
-    
+
 }
 
 /**
@@ -377,4 +377,12 @@ template {
 
 [hidden] {
     display: none;
+}
+
+// My additions to normalize.scss
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
