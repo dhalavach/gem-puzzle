@@ -1,10 +1,5 @@
 @media screen and (max-width: $mobile-large-width) {
 
-    .body {}
-
-    .container {}
-
-    .section {}
 
     .header {
         height: 60px;
@@ -12,9 +7,6 @@
 
 
 
-    // .hide-on-mobile {
-    //     display: none;
-    // }
 
     .logo {
         width: 50px;
@@ -292,6 +284,106 @@
             color: #FFFFFF;
         }
     }
+
+
+
+    .section-5__testimonials {
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        //max-height: 357px;
+
+
+    }
+
+    .section-5__testimonial-element {
+        width: 299px;
+        height: 109px;
+        max-height: 209px;
+        background: #F1F3F2;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+
+
+        .section-5__testimonial-element-header {
+            flex-grow: 0;
+            flex-shrink: 1;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: #000000;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            margin-left: 63px;
+
+            span {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 120%;
+                margin-right: 5px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+        }
+
+        .section-5__testimonial-element-text {
+            @include smallparagraph-font;
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+            overflow: hidden;
+
+        }
+    }
+
+    .section-5__line-scroll {
+        display: none;
+    }
+
+    .section-5__part-1-wrapper h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+        font-size: 24px;
+    }
+
+    .section-5-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-height: 1120px;
+
+
+    }
+
+    .section-5__part-1-wrapper {
+        flex: 1 1 80%;
+    }
+
+    .section-5__part-2-wrapper {
+        flex: 1 1 20%;
+    }
+
+    .section-5__button {
+        width: 240px;
+        height: 54px;
+        margin: 30px 40px 60px 40px;
+        border-radius: 5px;
+        justify-self: center;
+        align-self: center;
+
+
+    }
+
+    #section-5__leaf-photo {
+        display: none;
+    }
+
 
 
 

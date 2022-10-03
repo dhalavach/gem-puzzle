@@ -1,8 +1,7 @@
-
 // Small desktop or laptop
 @media screen and (max-width: $small-desktop-width) {
     body {
-       // background-color: lightblue;
+        // background-color: lightblue;
     }
 
     .section {
@@ -32,6 +31,11 @@
     .h1-box {
         height: 367px;
         width: 367px;
+
+        h1 {
+            font-size: 54.29px;
+        }
+
 
     }
 
@@ -65,17 +69,17 @@
 
 
 
-    .bamboo-cap {
+    .section-2__bamboo-cap {
         width: 455px;
         height: 408px;
         min-width: 455px
     }
 
-    .section-2-flower {
+    .section-2__flower {
         display: none;
     }
 
-    .section-2-text {
+    .section-2__text {
         padding-left: 2rem;
         padding-right: 2rem;
         display: flex;
@@ -99,7 +103,7 @@
 
 
 
-    .section-2-subtitle {
+    .section-2__subtitle {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;

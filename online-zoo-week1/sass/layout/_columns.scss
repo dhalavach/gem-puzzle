@@ -1,3 +1,18 @@
+//two even columns, apply on flex container
 .even-columns>* {
     flex-basis: 100%;
+}
+
+// Content and sidebar, 70 and 30 percent wide
+.content-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-sidebar>*:nth-child(1) {
+    flex: 1 1 70%;
+}
+
+.content-sidebar>*:nth-child(2) {
+    flex: 1 1 30%;
 }
