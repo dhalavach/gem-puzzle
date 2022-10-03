@@ -11,8 +11,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-left: 50%;
+    align-items: center;
+    margin-left: 40%;
+    //flex-shrink: 1;
 }
 
 
@@ -21,15 +22,17 @@
     //display: flex;
     //flex-direction: column;
     //justify-content: baseline;
-    align-items: flex-end;
+    //align-items: flex-end;
     width: 29rem;
     height: 29rem;
     border-radius: 50%;
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
 
-    H1 {
-        padding-left: 25%;
-    }
+.h1-box h1 {
+
+    padding-left: 50px;
+ 
 }
 
 
@@ -39,7 +42,8 @@
 }
 
 .section-1__main-button {
-    margin-left: 120px;
+    //margin-left: 120px;
+    align-self: center;
     margin-top: 60px;
     margin-bottom: 100px;
 

@@ -7,9 +7,11 @@
 @import "abstract/variables";
 @import "abstract/colors";
 @import "abstract/mixins";
+@import "abstract/placeholders";
 
 
 //Layout
+@import "layout/container";
 @import "layout/wrapper";
 @import "layout/header";
 @import "layout/section-1";
@@ -22,6 +24,8 @@
 
 
 // Components
+@import "components/animal-food-icon";
+@import "components/logo";
 @import "components/button";
 @import "components/testimonial";
 @import "components/widget";
@@ -31,13 +35,18 @@
 @import "pages/donate";
 
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
-    //font-size: 10px;
     font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+.container {
+    //width: 100%;
 }
 
 h1 {
@@ -78,6 +87,10 @@ h3 {
         max-width: $small-desktop-width;
     }
 
+    .header {
+        max-width: 100%;
+    }
+
     .logo {
         margin-left: 30px;
         margin-top: 14px;
@@ -106,7 +119,8 @@ h3 {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        margin-left: 456px;
+        margin-left: 50%;
+        //flex-shrink: 1;
     }
 
     h1 {
@@ -178,7 +192,7 @@ h3 {
     }
 
     .section-3 {
-        max-width: $small-desktop-width;
+        //max-width: $small-desktop-width;
     }
 
     .section-3__images-wrapper {

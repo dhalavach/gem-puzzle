@@ -1,8 +1,6 @@
 /* section 3 start */
 .section-3 {
     background: $white;
-
- 
 }
 
 .part-1-wrapper {
@@ -20,19 +18,28 @@
 }
 
 .section-3__images-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+
+    //grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-rows: 1fr 1fr;
 
 }
 
 .section-3__image-container {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    img {
+        display: inline-block;
+
+    }
 
     img:hover {
         transform: scale(1.03);
-
     }
+
 }
 
 .section-3-image-title {
@@ -51,16 +58,19 @@
     background-image: url("/assets/images/banana-bamboo_icon.png");
     width: 33px;
     height: 37px;
-    margin-left: 321px;
+    //margin-left: 321px;
     margin-top: -50px;
+    align-self: flex-end;
+    justify-self: flex-start;
 }
 
 .meat-fish-icon {
     background-image: url("/assets/images/meat-fish_icon.png");
     width: 48px;
     height: 38px;
-    margin-left: 310px;
+    //margin-left: 310px;
     margin-top: -50px;
+    align-self: flex-end;
 }
 
 #section-3-palm-foto {
