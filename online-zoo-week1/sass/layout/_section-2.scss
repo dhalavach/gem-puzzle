@@ -3,50 +3,61 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: $content-width;
+    padding-top: 140px;
+    padding-bottom: 180px;
 
 }
 
 .section-2-main {
-    //height: 403px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
 
-.bamboo-cap {
-    display: inline-block;
+.section-2__bamboo-cap {
+    //display: inline-block;
     width: 609px;
     height: 403px;
-    min-width: 609px;
-    padding-top: 140px;
+    flex-shrink: 0;
+    //min-width: 609px;
+    //padding-top: 140px;
     background-image: url("/assets/images/bamboo-cap.png");
     background-size: cover;
     backdrop-filter: blur(2px);
 }
 
-.section-2-text {
+.section-2__text {
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    flex-grow: 0;
+    //flex: 0 1 403px;
     padding-left: 5.44em;
     padding-right: 5.44rem;
-    padding-top: 140px;
+    // padding-top: 140px;
+    // padding-bottom: 140px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-.section-2-text p {
+.section-2__text p {
     @include smallparagraph-font;
 }
 
-.section-2-subtitle {
+.section-2__subtitle {
     @include subtitle-font;
 }
 
-.section-2-text h2 {
+.section-2__text h2 {
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 
-.section-2-flower {
+.section-2__flower {
     width: 27%;
     height: 605px;
     margin-top: 0.75em;
