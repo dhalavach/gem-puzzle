@@ -16,6 +16,8 @@
 }
 
 .part-2-wrapper {
+    max-width: $content-width;
+    margin: auto;
     margin-top: -200px;
     display: flex;
     justify-content: space-between;

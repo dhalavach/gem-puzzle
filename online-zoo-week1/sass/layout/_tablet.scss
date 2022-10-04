@@ -11,14 +11,23 @@
     }
 
     .header {
-        max-width: $tablet-width;
-        //position: sticky;
+        height: 4rem;
+
+
 
     }
 
     .logo {
+
+
+
         margin-left: 1rem;
         margin-top: 0px;
+
+    }
+
+    .section-1-wrapper {
+        margin-top: 4rem;
     }
 
 
@@ -169,9 +178,10 @@
         display: flex;
         //flex
         align-items: center;
+
         position: fixed;
         top: 20px;
-        left: 20px;
+        right: 20px;
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -250,9 +260,7 @@
         left: 0;
     }
 
-    .logo {
-        margin-left: 80%;
-    }
+
 
 
     .mobile-hide {
@@ -269,7 +277,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        
+
 
 
     }

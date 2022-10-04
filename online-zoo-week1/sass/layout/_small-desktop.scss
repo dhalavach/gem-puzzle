@@ -34,6 +34,7 @@
         height: 367px;
         width: 367px;
 
+
         h1 {
             font-size: 54.29px;
         }
@@ -47,11 +48,13 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+
         margin-left: 50%;
         //flex-shrink: 1;
     }
 
     h1 {
+
 
         font-family: 'Roboto';
         font-style: normal;
@@ -59,8 +62,10 @@
         font-size: 85px;
         line-height: 75%;
         text-align: center;
+
         text-transform: uppercase;
         color: #FFFFFF;
+        padding-top: 120px;
     }
 
     .section-1__main-button {
