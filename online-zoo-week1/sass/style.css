@@ -345,11 +345,6 @@ template {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 500px) {
-  .header {
-    max-width: 500px;
-  }
-}
 .container {
   margin: 0 auto;
   overflow: hidden;
@@ -880,6 +875,46 @@ header div {
   margin: 20px;
 }
 
+.section-5__testimonial-element {
+  box-sizing: border-box;
+  width: 268px;
+  height: 391px;
+  top: 94px;
+  background: #F1F3F2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.section-5__testimonial-element .section-5__testimonial-element-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-left: 63px;
+}
+.section-5__testimonial-element .section-5__testimonial-element-header span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #000000;
+  margin-right: 5px;
+}
+.section-5__testimonial-element .section-5__testimonial-element-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #000000;
+  margin: 0px 15px 19px 16px;
+  overflow: hidden;
+}
+
 /* section 5 end */
 /* footer start */
 .footer__wrapper {
@@ -1134,7 +1169,6 @@ header div {
   .section-4__main {
     margin-top: 30px;
     margin-bottom: 50px;
-    width: 90%;
   }
   .section-5__testimonial-element:last-child {
     display: none;
@@ -1144,18 +1178,30 @@ header div {
   }
 }
 @media screen and (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  .tablet-hide {
+    display: none;
+  }
   .header {
     max-width: 640px;
   }
   .logo {
     margin-left: 1rem;
+    margin-top: 0px;
   }
   .h1-box {
     height: 15rem;
     width: 15rem;
+    margin-top: 10px;
   }
   h1 {
     font-size: 3rem;
+  }
+  .section-1__main-button {
+    margin-right: 600px;
+    margin-bottom: 40px;
   }
   .button-large {
     width: 149px;
@@ -1165,17 +1211,75 @@ header div {
     font-size: 0.5rem;
   }
   .section-2 {
-    flex-direction: column;
-    margin-top: 10px;
+    flex-direction: row;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  .section-2__bamboo-cap {
+    display: none;
+  }
+  .section-2__main {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
   .section-2__flower {
-    display: none;
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
   .section-2__subtitle {
     font-size: 1rem;
   }
   h2 {
     font-size: 1.2rem;
+  }
+  .section-3__images-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-shrink: 1;
+    margin: 20px;
+    padding-bottom: 200px;
+  }
+  .section-3__arrow-left,
+.section-3__arrow-right {
+    display: none;
+  }
+  #section-3-palm-foto {
+    background-image: url("/assets/images/palm-foto-tablet.png");
+    width: 134px;
+    height: 202px;
+  }
+  #section-3-strelitsia1-foto {
+    background-image: url("/assets/images/strelitzia-foto-tablet.png");
+    width: 175px;
+    height: 131px;
+  }
+  .section-3-button {
+    align-self: center;
+    margin: 0px;
+  }
+  .section-4__main {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .section-4__main p {
+    margin: 10px 20px;
+  }
+  .section-4__widgets-arrow {
+    background-image: url("/assets/images/arrow-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 89px;
+    align-self: flex-start;
+    border: none;
+    flex-shrink: 0;
+    transform: rotate(-90deg);
+    margin-top: -25px;
   }
   #menu__toggle {
     opacity: 0;
@@ -1258,6 +1362,67 @@ header div {
   }
   .footer__column-1 {
     margin-left: 10px;
+  }
+  .section-5__testimonials {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-5__testimonial-element {
+    position: relative;
+    width: 609px;
+    height: 109px;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-5__testimonial-element::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%) border-box;
+    -webkit-mask: linear-gradient(#f1f3f2 0 0) content-box, linear-gradient(#f1f3f2 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  .section-5__testimonial-element .section-5__testimonial-element-header {
+    flex-grow: 0;
+    flex-shrink: 1;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 63px;
+  }
+  .section-5__testimonial-element .section-5__testimonial-element-header span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .section-5__testimonial-element .section-5__testimonial-element-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #000000;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .section-5__line-scroll {
+    display: none;
   }
 }
 @media screen and (max-width: 414px) {
@@ -1603,46 +1768,6 @@ header div {
   align-items: center;
 }
 
-.section-5__testimonial-element {
-  box-sizing: border-box;
-  width: 268px;
-  height: 391px;
-  top: 94px;
-  background: #F1F3F2;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-}
-.section-5__testimonial-element .section-5__testimonial-element-header {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 120%;
-  color: #000000;
-  margin-bottom: 10px;
-  margin-left: 63px;
-}
-.section-5__testimonial-element .section-5__testimonial-element-header span {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 120%;
-  color: #000000;
-  margin-right: 5px;
-}
-.section-5__testimonial-element .section-5__testimonial-element-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 120%;
-  color: #000000;
-  margin: 0px 15px 19px 16px;
-  overflow: hidden;
-}
-
 .widget {
   width: 168px;
   height: 168px;
@@ -1733,4 +1858,8 @@ h3 {
 
 .hidden {
   visibility: hidden;
+}
+
+.body {
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */
