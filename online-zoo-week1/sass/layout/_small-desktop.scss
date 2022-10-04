@@ -9,6 +9,8 @@
     }
 
     .header {
+        position: fixed;
+        z-index: 101;
         max-width: 100%;
     }
 

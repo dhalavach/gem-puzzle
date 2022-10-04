@@ -369,6 +369,7 @@ template {
 
 /* header start */
 .header {
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -1092,6 +1093,8 @@ header div {
     max-width: 1000px;
   }
   .header {
+    position: fixed;
+    z-index: 101;
     max-width: 100%;
   }
   .logo {
