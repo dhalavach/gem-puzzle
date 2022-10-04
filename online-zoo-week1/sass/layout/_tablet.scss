@@ -263,24 +263,20 @@
         margin-left: 10px;
     }
 
+
     .section-5__testimonials {
 
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        
 
 
     }
 
 
     .section-5__testimonial-element {
-        position: relative;
-        width: 609px;
-        height: 109px;
 
-        &::before {
-            @include gradient-border ($gray-light, $testimonial-border);
-        }
 
         display: flex;
         flex-direction: column;
