@@ -1216,7 +1216,9 @@ header div {
     margin-top: 10px;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 0px;
+    padding-top: 15%;
   }
   .section-1__main-button {
     margin-right: 600px;
@@ -1427,7 +1429,7 @@ header div {
     display: none;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 320px) {
   .header {
     height: 60px;
   }
@@ -1612,6 +1614,7 @@ header div {
     height: 89px;
     align-self: flex-end;
     border: none;
+    transform: rotate(0deg);
   }
   .section-4__button {
     margin: 30px 13px 40px 10px;
