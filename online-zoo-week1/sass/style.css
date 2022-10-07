@@ -1715,6 +1715,18 @@ header div {
   #section-5__leaf-photo {
     display: none;
   }
+  #logo-footer {
+    width: 150px;
+    height: 23px;
+    font-size: 19px;
+    line-height: 120%;
+    font-weight: 400;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 36px;
+    text-align: center;
+    background-position: 60%;
+  }
   .footer__wrapper {
     flex-direction: column;
   }
