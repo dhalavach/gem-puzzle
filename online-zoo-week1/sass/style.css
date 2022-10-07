@@ -1615,6 +1615,9 @@ header div {
     align-self: flex-end;
     border: none;
     transform: rotate(0deg);
+    margin-top: -60px;
+    margin-bottom: -20px;
+    margin-right: 50px;
   }
   .section-4__button {
     margin: 30px 13px 40px 10px;
