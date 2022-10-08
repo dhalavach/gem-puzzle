@@ -567,6 +567,8 @@ header div {
 }
 
 .section-3__image-container {
+  flex-shrink: 1;
+  display: flex;
   flex-direction: column;
   padding: 5px;
   border: 1px solid #f9804b;
@@ -1841,10 +1843,13 @@ h3 {
 }
 
 .swiper {
-  width: 1600px;
+  width: 100%;
+  height: auto;
 }
 
 .swiper-slide {
-  height: calc((100% - 40px) / 2);
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
 }/*# sourceMappingURL=style.css.map */

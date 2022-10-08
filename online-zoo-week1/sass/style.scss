@@ -68,10 +68,20 @@ h3 {
 }
 
 .swiper {
-    width: $content-width;
+    width: 100%;
+    height: auto;
 
 }
+
 .swiper-slide {
-    height: calc((100% - 40px) / 2);
-    overflow: hidden;
+    //height: 500px;
+    //overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
 }
+
+// .swiper-container-multirow-column>.swiper-wrapper {
+//     flex-direction: inherit;
+// }
