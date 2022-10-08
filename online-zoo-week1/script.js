@@ -53,3 +53,19 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+const swiperTestimonials = new Swiper(".swiper-testimonials", {
+  direction: "horizontal",
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 20,
+});
