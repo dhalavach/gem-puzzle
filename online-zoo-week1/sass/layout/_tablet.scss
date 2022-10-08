@@ -90,23 +90,14 @@
     }
 
 
-    .section-3__images-wrapper,
-    .swiper-slide {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        flex-shrink: 1;
-        margin: 20px;
-        padding-bottom: 200px;
 
-    }
 
     .section-3__arrow-left,
     .section-3__arrow-right {
         display: none;
     }
 
-    .part-2-wrapper {}
+
 
     #section-3-palm-foto {
         background-image: url("/assets/images/palm-foto-tablet.png");

@@ -18,12 +18,38 @@ const swiper = new Swiper(".swiper", {
 
   spaceBetween: 20,
   breakpoints: {
+    1600: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      grid: {
+        rows: 2,
+      },
+    },
+    1000: {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      grid: {
+        rows: 2,
+      },
+    },
     640: {
       spaceBetween: 10,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      grid: {
+        rows: 1,
+      },
     },
 
     320: {
       spaceBetween: 5,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      grid: {
+        rows: 1,
+      },
     },
   },
 });
