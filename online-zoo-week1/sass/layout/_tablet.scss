@@ -90,7 +90,8 @@
     }
 
 
-    .section-3__images-wrapper {
+    .section-3__images-wrapper,
+    .swiper-slide {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;

@@ -154,4 +154,34 @@
     margin-left: 80px;
 }
 
+
+
+.swiper {
+    width: 100%;
+    height: 1200px;
+
+
+}
+
+.swiper-slide {
+    height: calc((100% - 30px) / 2) !important;
+    //height: 500px;
+    //overflow: hidden;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    // grid-gap: 10px;
+    // margin-bottom: 100px;
+}
+
+// .swiper-container-multirow-column>.swiper-wrapper {
+//     flex-direction: inherit;
+// }
+
+.wrapper-swiper-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* section 3 end*/
