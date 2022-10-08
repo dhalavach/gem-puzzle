@@ -551,12 +551,9 @@ header div {
 /* section 3 start */
 .section-3 {
   background: #ffffff;
-}
-
-.part-1-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
 }
 
 .part-2-wrapper {
@@ -569,18 +566,7 @@ header div {
   flex: 1 1 0px;
 }
 
-.section-3__images-wrapper {
-  flex-shrink: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 20px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-
 .section-3__image-container {
-  display: flex;
   flex-direction: column;
   padding: 5px;
   border: 1px solid #f9804b;
@@ -647,36 +633,6 @@ header div {
   background-repeat: no-repeat;
   width: 368px;
   height: 275px;
-}
-
-.section-3__arrow-left {
-  background-image: url("/assets/images/arrow-ellipse-left.svg");
-  width: 62px;
-  height: 62px;
-  display: inline-block;
-  border: none;
-  border-radius: 50%;
-  margin-left: 138px;
-  margin-right: 20px;
-}
-
-.section-3__arrow-left:hover {
-  transform: scale(1.1);
-}
-
-.section-3__arrow-right {
-  background-image: url("/assets/images/arrow-ellipse-right.svg");
-  width: 62px;
-  height: 62px;
-  display: inline-block;
-  border: none;
-  border-radius: 50%;
-  margin-left: 20px;
-  margin-right: 138px;
-}
-
-.section-3__arrow-right:hover {
-  transform: scale(1.1);
 }
 
 .section-3-button {
@@ -1882,4 +1838,13 @@ h3 {
 
 .body {
   width: 100vw;
+}
+
+.swiper {
+  width: 1600px;
+}
+
+.swiper-slide {
+  height: calc((100% - 40px) / 2);
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
