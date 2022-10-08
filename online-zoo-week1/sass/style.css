@@ -551,9 +551,19 @@ header div {
 /* section 3 start */
 .section-3 {
   background: #ffffff;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.part-1-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   min-width: 0;
+  flex-grow: 0;
+  flex-shrink: 1;
 }
 
 .part-2-wrapper {
@@ -635,6 +645,40 @@ header div {
   background-repeat: no-repeat;
   width: 368px;
   height: 275px;
+}
+
+.section-3__arrow-left {
+  background-image: url("/assets/images/arrow-ellipse-left.svg");
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  border: none;
+  border-radius: 50%;
+  margin-left: 138px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.section-3__arrow-left:hover {
+  transform: scale(1.1);
+}
+
+.section-3__arrow-right {
+  background-image: url("/assets/images/arrow-ellipse-right.svg");
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  border: none;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 138px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.section-3__arrow-right:hover {
+  transform: scale(1.1);
 }
 
 .section-3-button {
@@ -1852,4 +1896,11 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 20px;
+  margin-bottom: 100px;
+}
+
+.wrapper-swiper-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
