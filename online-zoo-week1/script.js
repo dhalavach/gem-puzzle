@@ -57,13 +57,16 @@ const swiper = new Swiper(".swiper", {
 const swiperTestimonials = new Swiper(".swiper-testimonials", {
   direction: "horizontal",
   loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
+
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   type: "bullets",
+  // },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+    dragClass: "swiper-scrollbar-drag",
+    dragSize: "120px",
   },
   slidesPerView: 3,
   slidesPerGroup: 3,

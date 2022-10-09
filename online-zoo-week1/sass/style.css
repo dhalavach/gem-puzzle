@@ -676,7 +676,7 @@ header div {
   min-width: 0;
 }
 
-.swiper-slide {
+.section-3 .swiper-slide {
   height: calc((100% - 30px) / 2) !important;
 }
 
@@ -845,13 +845,6 @@ header div {
   align-items: center;
 }
 
-.section-5__testimonials {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 #section-5__leaf-photo {
   background-image: url("/assets/images/section-5-leaf.png");
   width: 300.92px;
@@ -863,23 +856,9 @@ header div {
   margin-left: 10rem;
 }
 
-.section-5__line-scroll {
-  /* slider not implemented, using static image instead */
-  background-image: url("/assets/images/section-5-line-scroll.png");
-  width: 599px;
-  height: 8px;
-  margin-top: 20px;
-}
-
-.section-5__line-scroll:hover {
-  transform: scale(1.1);
-}
-
 .section-5__testimonial-element {
   margin: 20px;
-}
-
-.section-5__testimonial-element {
+  overflow: hidden;
   background: #F1F3F2;
   border-radius: 20px;
   display: flex;
@@ -926,20 +905,27 @@ header div {
   overflow: hidden;
 }
 
-.wrapper-swiper-nav {
-  width: 1600px;
-  height: auto;
-}
-
 .swiper-testimonials {
   position: relative;
-  width: 100%;
-  height: 100%;
-  min-width: 0;
+  width: 1160px;
+  height: 575px;
+  flex-shrink: 0;
 }
 
-.swiper-pagination {
+.swiper-scrollbar {
   margin-top: 20px;
+  width: 599px;
+  height: 10px;
+}
+
+.swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: #f9804b;
+  cursor: pointer;
+}
+
+.section-5 .swiper-slide {
+  width: 268px;
+  height: auto;
 }
 
 /* section 5 end */
