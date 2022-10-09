@@ -1,4 +1,11 @@
 /*eslint-disable*/
+const testimonials = [
+  ...document.querySelectorAll(".section-5__testimonial-element"),
+];
+
+function pickRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
 
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
@@ -73,14 +80,21 @@ const swiperTestimonials = new Swiper(".swiper-testimonials", {
   slidesPerView: 3,
   slidesPerGroup: 3,
   spaceBetween: 20,
-  //random: true,
+  virtual: {
+    slides: (function () {
+      const slides = [];
+      for (let i = 0; i < 100; i++) {
+        slides.push(pickRandom(testimonials).outerHTML);
+      }
+      return slides;
+    })(),
+  },
 });
 
-const testimonials = document.querySelectorAll(
-  ".section-5__testimonial-element"
-);
-testimonials.addEventListener("copy", preventCopy, false);
+// testimonials.addEventListener("copy", preventCopy, false);
 
-function preventCopy(event) {
-  event.preventDefault();
-}
+// function preventCopy(event) {
+//   event.preventDefault();
+
+// }
+//testimonials[Math.floor(Math.random() * testimonials.length)]
