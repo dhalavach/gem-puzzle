@@ -857,8 +857,8 @@ header div {
 }
 
 .section-5__testimonial-element {
-  margin: 20px;
   overflow: hidden;
+  padding: 20px;
   background: #F1F3F2;
   border-radius: 20px;
   display: flex;
@@ -918,7 +918,6 @@ header div {
 }
 
 .swiper-scrollbar {
-  margin-top: 20px;
   width: 599px;
   height: 10px;
 }
@@ -934,7 +933,7 @@ header div {
 
 .section-5 .swiper-slide {
   width: 268px;
-  height: auto;
+  height: 391px;
 }
 
 /* section 5 end */

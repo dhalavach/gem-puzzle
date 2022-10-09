@@ -47,8 +47,9 @@
 
 .section-5__testimonial-element {
 
-    margin: 20px;
+    //margin: 20px;
     overflow: hidden;
+    padding: 20px;
 
 
     &::before {
@@ -82,6 +83,7 @@
     .section-5__testimonial-element-text {
         @include smallparagraph-font;
         margin: 0px 15px 19px 16px;
+        // padding: 20px;
         overflow: hidden;
 
     }
@@ -115,7 +117,7 @@
 .swiper-button-next {}
 
 .swiper-scrollbar {
-    margin-top: 20px;
+    // margin-top: 20px;
     width: 599px;
     height: 10px;
 }
@@ -134,7 +136,8 @@
 
 .section-5 .swiper-slide {
     width: 268px;
-    height: auto;
+    height: 391px;
+    //padding-bottom: 10px;
 }
 
 

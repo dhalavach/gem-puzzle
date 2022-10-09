@@ -74,11 +74,11 @@ const swiperTestimonials = new Swiper(".swiper-testimonials", {
     el: ".swiper-scrollbar",
     draggable: true,
     dragClass: "swiper-scrollbar-drag",
-    dragSize: "120px",
+    dragSize: "12.5%",
   },
   grabCursor: true,
-  slidesPerView: 3,
-  slidesPerGroup: 3,
+  slidesPerView: 4,
+  slidesPerGroup: 1,
   spaceBetween: 20,
   virtual: {
     slides: (function () {
