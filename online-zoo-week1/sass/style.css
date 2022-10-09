@@ -910,6 +910,10 @@ header div {
   width: 1160px;
   height: 575px;
   flex-shrink: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .swiper-scrollbar {
@@ -921,6 +925,10 @@ header div {
 .swiper-scrollbar .swiper-scrollbar-drag {
   background-color: #f9804b;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .section-5 .swiper-slide {

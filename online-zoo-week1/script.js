@@ -15,6 +15,7 @@ const swiper = new Swiper(".swiper", {
   grid: {
     rows: 2,
   },
+  random: true,
 
   spaceBetween: 20,
   breakpoints: {
@@ -68,7 +69,18 @@ const swiperTestimonials = new Swiper(".swiper-testimonials", {
     dragClass: "swiper-scrollbar-drag",
     dragSize: "120px",
   },
+  grabCursor: true,
   slidesPerView: 3,
   slidesPerGroup: 3,
   spaceBetween: 20,
+  //random: true,
 });
+
+const testimonials = document.querySelectorAll(
+  ".section-5__testimonial-element"
+);
+testimonials.addEventListener("copy", preventCopy, false);
+
+function preventCopy(event) {
+  event.preventDefault();
+}

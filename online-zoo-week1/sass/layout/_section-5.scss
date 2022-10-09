@@ -98,6 +98,12 @@
     // justify-content: space-between;
     // align-items: stretch;
 
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 
 
 
@@ -116,6 +122,12 @@
 .swiper-scrollbar .swiper-scrollbar-drag {
     background-color: $brand-main;
     cursor: pointer;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
 }
 
