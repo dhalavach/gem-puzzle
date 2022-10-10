@@ -22,7 +22,6 @@ const swiper = new Swiper(".swiper", {
   grid: {
     rows: 2,
   },
-  random: true,
 
   spaceBetween: 20,
   breakpoints: {
@@ -74,16 +73,19 @@ const swiperTestimonials = new Swiper(".swiper-testimonials", {
     el: ".swiper-scrollbar",
     draggable: true,
     dragClass: "swiper-scrollbar-drag",
-    dragSize: "12.5%",
+    dragSize: "100px",
   },
   grabCursor: true,
   slidesPerView: 4,
-  slidesPerGroup: 1,
+  slidesPerGroup: 4,
   spaceBetween: 20,
   virtual: {
     slides: (function () {
       const slides = [];
       for (let i = 0; i < 100; i++) {
+        slides.push(pickRandom(testimonials).outerHTML);
+        slides.push(pickRandom(testimonials).outerHTML);
+        slides.push(pickRandom(testimonials).outerHTML);
         slides.push(pickRandom(testimonials).outerHTML);
       }
       return slides;
