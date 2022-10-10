@@ -107,14 +107,14 @@
                         <div class="swiper-wrapper">
 
 
-                            <div class="section-3__image-container swiper-slide">
+                            <div class="section-3__image-container swiper-slide" id="1">
                                 <img src="/assets/images/two-pandas.png" alt="two pandas">
                                 <p class="section-3-image-title">Giant pandas</p>
                                 <p class="section-3-image-subtitle">Native to Southwest China</p>
                                 <div class="banana-bamboo-icon"></div>
                             </div>
 
-                            <div class="section-3__image-container swiper-slide">
+                            <div class="section-3__image-container swiper-slide" id="2">
                                 <img src="/assets/images/eagles.png" alt="eagle">
                                 <p class="section-3-image-title">Eagles</p>
                                 <p class="section-3-image-subtitle">Native to South America</p>
@@ -128,12 +128,6 @@
                                 <div class="banana-bamboo-icon"></div>
                             </div>
 
-                            <div class="section-3__image-container swiper-slide">
-                                <img src="/assets/images/cheetah.png" alt="cheetah">
-                                <p class="section-3-image-title">Cheetahs</p>
-                                <p class="section-3-image-subtitle">Native to Africa</p>
-                                <div class="meat-fish-icon"></div>
-                            </div>
 
                             <div class="section-3__image-container swiper-slide">
                                 <img src="/assets/images/penguin.png" alt="penguin">
@@ -157,6 +151,11 @@
                             </div>
 
 
+
+
+
+
+
                             <div class="section-3__image-container swiper-slide">
                                 <img src="/assets/images/penguin.png" alt="penguin">
                                 <p class="section-3-image-title">Penguins</p>
@@ -164,6 +163,19 @@
                                 <div class="meat-fish-icon"></div>
                             </div>
 
+                            <div class="section-3__image-container swiper-slide">
+                                <img src="/assets/images/cheetah.png" alt="cheetah">
+                                <p class="section-3-image-title">Cheetahs</p>
+                                <p class="section-3-image-subtitle">Native to Africa</p>
+                                <div class="meat-fish-icon"></div>
+                            </div>
+
+                            <div class="section-3__image-container swiper-slide">
+                                <img src="/assets/images/sloth.png" alt="sloth">
+                                <p class="section-3-image-title">Sloth</p>
+                                <p class="section-3-image-subtitle">Native to South America</p>
+                                <div class="banana-bamboo-icon"></div>
+                            </div>
 
                             <div class="section-3__image-container swiper-slide">
                                 <img src="/assets/images/gorrila.png" alt="gorilla">
@@ -172,48 +184,25 @@
                                 <div class="banana-bamboo-icon"></div>
                             </div>
 
-                            <div class="section-3__image-container swiper-slide">
-                                <img src="/assets/images/cheetah.png" alt="cheetah">
-                                <p class="section-3-image-title">Cheetahs</p>
-                                <p class="section-3-image-subtitle">Native to Africa</p>
-                                <div class="meat-fish-icon"></div>
-                            </div>
-
-                            <div class="section-3__image-container swiper-slide">
+                            <div class="section-3__image-container swiper-slide" id="1">
                                 <img src="/assets/images/two-pandas.png" alt="two pandas">
                                 <p class="section-3-image-title">Giant pandas</p>
                                 <p class="section-3-image-subtitle">Native to Southwest China</p>
                                 <div class="banana-bamboo-icon"></div>
                             </div>
 
-
-                            <div class="section-3__image-container swiper-slide">
-                                <img src="/assets/images/cheetah.png" alt="cheetah">
-                                <p class="section-3-image-title">Cheetahs</p>
-                                <p class="section-3-image-subtitle">Native to Africa</p>
-                                <div class="meat-fish-icon"></div>
-                            </div>
-
-                            <div class="section-3__image-container swiper-slide">
-                                <img src="/assets/images/penguin.png" alt="penguin">
-                                <p class="section-3-image-title">Penguins</p>
-                                <p class="section-3-image-subtitle">Native to Antarctica</p>
-                                <div class="meat-fish-icon"></div>
-                            </div>
-
-                            <div class="section-3__image-container swiper-slide">
-                                <img src="/assets/images/sloth.png" alt="sloth">
-                                <p class="section-3-image-title">Sloth</p>
+                            <div class="section-3__image-container swiper-slide" id="2">
+                                <img src="/assets/images/eagles.png" alt="eagle">
+                                <p class="section-3-image-title">Eagles</p>
                                 <p class="section-3-image-subtitle">Native to South America</p>
-                                <div class="banana-bamboo-icon"></div>
+                                <div class="meat-fish-icon"></div>
                             </div>
-
 
                         </div>
 
 
                     </div>
-                    <div class="section-3__arrow-right"></div>
+                    <div class="section-3__arrow-right append-slide"></div>
                 </div>
 
                 <div class="part-2-wrapper">
@@ -295,15 +284,17 @@
                     <div class="swiper-testimonials">
                         <div class="swiper-wrapper">
 
-                            <div class="section-5__testimonial-element swiper-slide">
+                            <div data-modal-target="#modal" class="section-5__testimonial-element swiper-slide modal"
+                                id="modal">
                                 <div class="section-5__testimonial-element-header">
+
                                     <p>Michael John</p>
                                     <span>Local Austria</span>
                                     <span>•</span>
                                     <span>Today</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    1<br>
+
                                     The best online zoo I’ve met. My son delighted very much ljves to watch
                                     gouillas. Online
                                     zoo
@@ -325,8 +316,11 @@
                                 </div>
                             </div>
 
+                            <div id="overlay"></div>
 
-                            <div class="section-5__testimonial-element swiper-slide">
+
+
+                            <div class="section-5__testimonial-element swiper-slide modal">
                                 <div class="section-5__testimonial-element-header">
                                     <p>Oscar Samborsky</p>
                                     <span>Local Austria</span>
@@ -334,7 +328,7 @@
                                     <span>Yesterday</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    2<br>Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                    Online zoo is one jf the ways to instill a love for animals.The best online zoo
                                     I’ve
                                     met. My
                                     son delighted very much ljves to watch gouillas. Online zoo is one jf the ways
@@ -367,7 +361,7 @@
                             </div>
 
 
-                            <div class="section-5__testimonial-element swiper-slide">
+                            <div class="section-5__testimonial-element swiper-slide modal">
                                 <div class="section-5__testimonial-element-header">
                                     <p>Fredericka Michelin</p>
                                     <span>Local Austria</span>
@@ -375,7 +369,7 @@
                                     <span>Yesterday</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    3<br>The best online zoo I’ve met. My son delighted very much ljves to watch
+                                    The best online zoo I’ve met. My son delighted very much ljves to watch
                                     gouillas. Online
                                     zoo
                                     is one jf the ways to instill a love for animals.The best online zoo I’ve met.
@@ -402,7 +396,7 @@
 
 
 
-                            <div class="section-5__testimonial-element swiper-slide">
+                            <div class="section-5__testimonial-element swiper-slide modal">
                                 <div class="section-5__testimonial-element-header">
                                     <p>Richard Behiel</p>
                                     <span>Local Austria</span>
@@ -410,7 +404,7 @@
                                     <span>Yesterday</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    4<br>All the people here who bought this wireless tungsten cube to admire its
+                                    All the people here who bought this wireless tungsten cube to admire its
                                     surreal
                                     heft have precisely the wrong mindset. I, in my exalted wisdom and unbridled
                                     ambition, bought this cube to become fully accustomed to the intensity of its
@@ -458,7 +452,7 @@
                             </div>
 
 
-                            <div class="section-5__testimonial-element swiper-slide">
+                            <div class="section-5__testimonial-element swiper-slide modal">
                                 <div class="section-5__testimonial-element-header">
                                     <p>John Doe</p>
                                     <span>USA</span>
@@ -466,7 +460,7 @@
                                     <span>Today</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    5<br>Online
+                                    Online
                                     zoo
                                     is one jf the ways to instill a love for animals.The best online zoo I’ve met.
                                     My son
@@ -487,7 +481,7 @@
                             </div>
 
 
-                            <div class="section-5__testimonial-element swiper-slide">
+                            <div class="section-5__testimonial-element swiper-slide modal">
                                 <div class="section-5__testimonial-element-header">
                                     <p>John White</p>
                                     <span>USA</span>
@@ -495,7 +489,7 @@
                                     <span>Today</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    6<br>Online
+                                    Online
                                     zoo
                                     is one jf the ways to instill a love for animals.The best online zoo I’ve met.
                                     My son
@@ -547,7 +541,7 @@
                                 </div>
                             </div>
 
-                            <div class="section-5__testimonial-element swiper-slide">
+                            <div class="section-5__testimonial-element swiper-slide modal">
                                 <div class="section-5__testimonial-element-header">
                                     <p>Jane Doe</p>
                                     <span>Local Austria</span>
@@ -555,7 +549,7 @@
                                     <span>Today</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    7<br>The best online zoo I’ve met. Online
+                                    The best online zoo I’ve met. Online
                                     zoo
                                     is one jf the ways to instill a love for animals.The best online zoo I’ve met.
                                     My son
@@ -566,7 +560,7 @@
                                 </div>
                             </div>
 
-                            <div class="section-5__testimonial-element swiper-slide">
+                            <div class="section-5__testimonial-element swiper-slide modal">
                                 <div class="section-5__testimonial-element-header">
                                     <p>John Smith</p>
                                     <span>Local Austria</span>
@@ -574,7 +568,7 @@
                                     <span>Today</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    8<br>Online zoo is one jf the ways to instill a love for animals.The best online zoo
+                                    Online zoo is one jf the ways to instill a love for animals.The best online zoo
                                     I’ve
                                     met. My
                                     son delighted very much ljves to watch gouillas. Online zoo is one jf the ways
@@ -596,7 +590,7 @@
                                 </div>
                             </div>
 
-                            <div class="section-5__testimonial-element swiper-slide">
+                            <div class="section-5__testimonial-element swiper-slide modal">
                                 <div class="section-5__testimonial-element-header">
                                     <p>Jane Smith</p>
                                     <span>Local Austria</span>
@@ -604,7 +598,7 @@
                                     <span>Today</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    9<br>We love to watch animals. Online zoo is one jf the ways to instill a love for
+                                    We love to watch animals. Online zoo is one jf the ways to instill a love for
                                     animals.The best online zoo
                                     I’ve
                                     met. My
@@ -632,7 +626,7 @@
 
 
 
-                            <div class="section-5__testimonial-element swiper-slide" id="last-testimonial">
+                            <div class="section-5__testimonial-element swiper-slide modal" id="last-testimonial">
                                 <div class="section-5__testimonial-element-header">
                                     <p>Mila Riksha</p>
                                     <span>Local Austria</span>
@@ -640,7 +634,7 @@
                                     <span>Yesterday</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    10<br>My son delighted very much ljves to watch gouillas. Online zoo is one jf the
+                                    My son delighted very much ljves to watch gouillas. Online zoo is one jf the
                                     ways to
                                     instill
                                     a love for animals.The best online zoo I’ve met. My son delighted very much
@@ -668,7 +662,9 @@
                                 </div>
                             </div>
 
-                            <div class="section-5__testimonial-element swiper-slide">
+                            <div class="section-5__testimonial-element swiper-slide modal">
+                                <button data-close-button class="close-button">&times;</button>
+
                                 <div class="section-5__testimonial-element-header">
                                     <p>Jane Smith</p>
                                     <span>Local Austria</span>
@@ -676,7 +672,7 @@
                                     <span>Today</span>
                                 </div>
                                 <div class="section-5__testimonial-element-text">
-                                    11<br>We love to watch animals. Online zoo is one jf the ways to instill a love for
+                                    We love to watch animals. Online zoo is one jf the ways to instill a love for
                                     animals.The best online zoo
                                     I’ve
                                     met. My

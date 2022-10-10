@@ -1370,9 +1370,6 @@ header div {
     visibility: visible;
     left: 0;
   }
-  .mobile-hide {
-    display: none;
-  }
   .footer__column-1 {
     margin-left: 10px;
   }
@@ -1419,9 +1416,6 @@ header div {
     margin: 0px 0px 0px 0px;
     padding: 10px;
     overflow: hidden;
-  }
-  .section-5__line-scroll {
-    display: none;
   }
 }
 @media screen and (max-width: 320px) {
