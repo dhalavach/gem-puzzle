@@ -50,6 +50,88 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".section-3__arrow-left",
   },
 
+  // grid: {
+  //   rows: 1,
+  // },
+
+  breakpoints: {
+    1600: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      // grid: {
+      //   rows: 1,
+      // },
+    },
+    1000: {
+      spaceBetween: 10,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      // grid: {
+      //   rows: 1,
+      // },
+    },
+    640: {
+      spaceBetween: 10,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      // grid: {
+      //   rows: 1,
+      // },
+    },
+
+    320: {
+      spaceBetween: 5,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      grid: {
+        rows: 1,
+      },
+    },
+  },
+});
+
+// document.querySelector(".append-slide").addEventListener("click", function (e) {
+//   e.preventDefault();
+
+//   let shuffledPets = shuffle(pets);
+
+//   // swiper.appendSlide(shuffledPets[0].outerHTML);
+//   // swiper.appendSlide(shuffledPets[1].outerHTML);
+//   // swiper.appendSlide(shuffledPets[2].outerHTML);
+//   // swiper.appendSlide(shuffledPets[3].outerHTML);
+//   // swiper.appendSlide(shuffledPets[4].outerHTML);
+//   // swiper.appendSlide(shuffledPets[5].outerHTML);
+//   // swiper.appendSlide(shuffledPets[6].outerHTML);
+//   // swiper.appendSlide(shuffledPets[7].outerHTML);
+
+//   swiper.appendSlide(pickRandom(pets).outerHTML);
+//   swiper.appendSlide(pickRandom(pets).outerHTML);
+//   swiper.appendSlide(pickRandom(pets).outerHTML);
+//   swiper.appendSlide(pickRandom(pets).outerHTML);
+//   swiper.appendSlide(pickRandom(pets).outerHTML);
+//   swiper.appendSlide(pickRandom(pets).outerHTML);
+// });
+
+const swiper2 = new Swiper(".swiper-2", {
+  direction: "horizontal",
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 20,
+  centerInsufficientSlides: true,
+  centeredSlidesBounds: true,
+  loopFillGroupWithBlank: true,
+  slidesCentered: true,
+  loop: true,
+  initialSlide: 0,
+  autoHeight: false,
+  grabCursor: true,
+
+  navigation: {
+    nextEl: ".section-3__arrow-right",
+    prevEl: ".section-3__arrow-left",
+  },
+
   grid: {
     rows: 1,
   },
@@ -90,28 +172,6 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
-
-// document.querySelector(".append-slide").addEventListener("click", function (e) {
-//   e.preventDefault();
-
-//   let shuffledPets = shuffle(pets);
-
-//   // swiper.appendSlide(shuffledPets[0].outerHTML);
-//   // swiper.appendSlide(shuffledPets[1].outerHTML);
-//   // swiper.appendSlide(shuffledPets[2].outerHTML);
-//   // swiper.appendSlide(shuffledPets[3].outerHTML);
-//   // swiper.appendSlide(shuffledPets[4].outerHTML);
-//   // swiper.appendSlide(shuffledPets[5].outerHTML);
-//   // swiper.appendSlide(shuffledPets[6].outerHTML);
-//   // swiper.appendSlide(shuffledPets[7].outerHTML);
-
-//   swiper.appendSlide(pickRandom(pets).outerHTML);
-//   swiper.appendSlide(pickRandom(pets).outerHTML);
-//   swiper.appendSlide(pickRandom(pets).outerHTML);
-//   swiper.appendSlide(pickRandom(pets).outerHTML);
-//   swiper.appendSlide(pickRandom(pets).outerHTML);
-//   swiper.appendSlide(pickRandom(pets).outerHTML);
-// });
 
 const swiperTestimonials = new Swiper(".swiper-testimonials", {
   direction: "horizontal",

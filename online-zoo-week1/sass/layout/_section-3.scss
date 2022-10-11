@@ -133,15 +133,19 @@
 
 .swiper {
     width: 100%;
-    height: 1000px;
+    height: 500px;
     min-width: 0;
 
 
 }
 
+.swiper-2 {
+    width: auto;
+}
+
 .section-3 .swiper-slide {
-    height: calc((100% - 30px) / 2) !important;
-    //height: 500px;
+    //height: calc((100% - 30px) / 2) !important;
+    height: 500px;
     //overflow: hidden;
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr;
@@ -168,6 +172,17 @@
     justify-content: space-between;
     //flex: 1 1 0px;
 
+}
+
+.section-3-swipers-container {
+
+    height: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+    overflow: hidden;
 }
 
 /* section 3 end*/
