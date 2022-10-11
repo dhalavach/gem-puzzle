@@ -33,30 +33,34 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
-  loop: true,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 20,
+  centerInsufficientSlides: true,
+  centeredSlidesBounds: true,
   loopFillGroupWithBlank: true,
   slidesCentered: true,
+  loop: true,
+  initialSlide: 0,
+  autoHeight: false,
+  grabCursor: true,
 
   navigation: {
     nextEl: ".section-3__arrow-right",
     prevEl: ".section-3__arrow-left",
   },
-  autoHeight: false,
-  slidesPerView: 3,
-  slidesPerGroup: 3,
+
   grid: {
-    rows: 2,
+    rows: 1,
   },
 
-  spaceBetween: 20,
-  //virtual: true,
   breakpoints: {
     1600: {
       spaceBetween: 20,
       slidesPerView: 3,
       slidesPerGroup: 3,
       grid: {
-        rows: 2,
+        rows: 1,
       },
     },
     1000: {
@@ -64,7 +68,7 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 2,
       slidesPerGroup: 2,
       grid: {
-        rows: 2,
+        rows: 1,
       },
     },
     640: {

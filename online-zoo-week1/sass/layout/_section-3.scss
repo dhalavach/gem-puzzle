@@ -32,6 +32,7 @@
         display: inline-block;
         width: 100%;
         height: auto;
+
     }
 
     img:hover {
@@ -132,7 +133,7 @@
 
 .swiper {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     min-width: 0;
 
 
@@ -157,6 +158,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+}
+
+
+.section-3 .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //flex: 1 1 0px;
+
 }
 
 /* section 3 end*/
