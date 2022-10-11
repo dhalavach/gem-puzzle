@@ -549,9 +549,9 @@ header div {
 
 /* section 2 end */
 .part-2-wrapper {
+  width: 100%;
   max-width: 1600px;
   margin: auto;
-  margin-top: -200px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -672,16 +672,21 @@ header div {
 
 .swiper {
   width: 100%;
-  height: 500px;
+  height: 100%;
   min-width: 0;
+  padding-bottom: 15px;
 }
 
 .swiper-2 {
-  width: auto;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  padding-top: 15px;
 }
 
 .section-3 .swiper-slide {
-  height: 500px;
+  width: 100%;
+  height: auto;
 }
 
 .wrapper-swiper-nav {
@@ -697,7 +702,8 @@ header div {
 }
 
 .section-3-swipers-container {
-  height: 1200px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -846,6 +852,7 @@ header div {
 /* section 4 end*/
 /* section 5 start */
 .section-5 {
+  width: 100%;
   max-width: 1600px;
   margin: auto;
 }
@@ -926,8 +933,8 @@ header div {
 
 .swiper-testimonials {
   position: relative;
-  width: 1160px;
-  height: 575px;
+  width: 90%;
+  height: 100%;
   flex-shrink: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -936,9 +943,14 @@ header div {
   overflow: hidden;
 }
 
+.swiper-testimonials .swiper-wrapper {
+  margin-bottom: 5%;
+}
+
 .swiper-scrollbar {
-  width: 599px;
+  width: 60%;
   height: 10px;
+  margin-top: 100px;
 }
 
 .swiper-scrollbar .swiper-scrollbar-drag {
@@ -951,8 +963,9 @@ header div {
 }
 
 .section-5 .swiper-slide {
-  width: 268px;
-  height: 391px;
+  width: 100%;
+  height: auto;
+  max-height: 591px;
 }
 
 /* section 5 end */
@@ -1279,10 +1292,6 @@ header div {
   h2 {
     font-size: 1.2rem;
   }
-  .section-3__arrow-left,
-.section-3__arrow-right {
-    display: none;
-  }
   #section-3-palm-foto {
     background-image: url("/assets/images/palm-foto-tablet.png");
     width: 134px;
@@ -1504,6 +1513,9 @@ header div {
     justify-self: flex-start;
     margin-top: 0px;
     padding-top: 0px;
+  }
+  .swiper-2 {
+    display: none;
   }
   .section-3__arrow-left,
 .section-3__arrow-right {
