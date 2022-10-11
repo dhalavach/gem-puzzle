@@ -56,6 +56,7 @@ const swiper = new Swiper(".swiper", {
 
   breakpoints: {
     1600: {
+      direction: "horizontal",
       spaceBetween: 20,
       slidesPerView: 3,
       slidesPerGroup: 3,
@@ -64,6 +65,7 @@ const swiper = new Swiper(".swiper", {
       // },
     },
     1000: {
+      direction: "horizontal",
       spaceBetween: 10,
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -72,6 +74,7 @@ const swiper = new Swiper(".swiper", {
       // },
     },
     640: {
+      direction: "horizontal",
       spaceBetween: 10,
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -81,12 +84,13 @@ const swiper = new Swiper(".swiper", {
     },
 
     320: {
+      direction: "horizontal",
       spaceBetween: 5,
       slidesPerView: 1,
       slidesPerGroup: 1,
-      grid: {
-        rows: 1,
-      },
+      // grid: {
+      //   rows: 1,
+      // },
     },
   },
 });

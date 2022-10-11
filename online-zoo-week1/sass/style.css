@@ -636,14 +636,14 @@ header div {
   display: inline-block;
   border: none;
   border-radius: 50%;
-  margin-left: 138px;
+  margin-left: 5%;
   margin-right: 20px;
   flex-shrink: 0;
   align-self: center;
 }
 
 .section-3__arrow-left:hover {
-  transform: scale(1.1);
+  background-image: url("/assets/images/arrow-left-green.svg");
 }
 
 .section-3__arrow-right {
@@ -654,13 +654,13 @@ header div {
   border: none;
   border-radius: 50%;
   margin-left: 20px;
-  margin-right: 138px;
+  margin-right: 5%;
   flex-shrink: 0;
   align-self: center;
 }
 
 .section-3__arrow-right:hover {
-  transform: scale(1.1);
+  background-image: url("/assets/images/arrow-right-green.svg");
 }
 
 .section-3-button {
@@ -1292,6 +1292,9 @@ header div {
   h2 {
     font-size: 1.2rem;
   }
+  .section-3 .swiper-2 {
+    display: none;
+  }
   #section-3-palm-foto {
     background-image: url("/assets/images/palm-foto-tablet.png");
     width: 134px;
@@ -1520,10 +1523,6 @@ header div {
   .section-3__arrow-left,
 .section-3__arrow-right {
     display: none;
-  }
-  .section-3__image-container {
-    margin-left: 10px;
-    margin-right: 25px;
   }
   .section-3-image-title {
     font-family: "Roboto";
