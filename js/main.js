@@ -24,14 +24,17 @@ function generatePuzzle() {
     })
 
   }
-  console.log(puzzle)
 }
 
 function renderPuzzle() {
   puzzleContainer.innerHTML = "";
   for (let item of puzzle) {
   if (item.disabled ){
-    continue
+    puzzleContainer.innerHTML += `
+    <div class = "item" id="disabled" style="left: ${item.x}px; top: ${item.y}px; background-color: white">
+
+    </div>
+    `
   } else {
 
     puzzleContainer.innerHTML += `
@@ -46,7 +49,10 @@ function renderPuzzle() {
     item.style.width = `${puzzleWidth/size}px`;
     item.style.height = `${puzzleHeight/size}px`;
 
+
   })
+
+
 }
 
 function getRow(position) {
@@ -70,6 +76,7 @@ function randomize() {
     item.value = randomValues[i];
     i++;
 
+
   }
 
   const emptyPuzzleItem = puzzle.find((item) => item.value === size * size)
@@ -83,11 +90,13 @@ function getRandom() {
     values.push(i);
   }
   const randomValues = values.sort(() => Math.random() - 0.5);
+
   return randomValues;
 }
 
 function handleInput() {
-  document.addEventListener('keydown', handleKeyDown)
+  document.addEventListener('keydown', handleKeyDown);
+  document.addEventListener('click', handleClick)
 }
 
 function handleKeyDown(e) {
@@ -107,6 +116,32 @@ function handleKeyDown(e) {
       break
   }
   renderPuzzle()
+}
+
+function handleClick(e) {
+let displayedValue = parseInt(e.target.innerHTML);
+
+//console.log(displayedValue);
+console.log((puzzle.find((e)=> e.value === displayedValue).position));
+let clickedElementPosition = getRealPosition(displayedValue);
+let emptyElementPosition = getEmptyPuzzle().position;
+if(clickedElementPosition + 1 === emptyElementPosition) {
+  moveRight();
+} else if (clickedElementPosition - 1 === emptyElementPosition)  {
+  moveLeft();
+} else if (clickedElementPosition - size === emptyElementPosition) {
+  moveUp();
+} else if(clickedElementPosition + size === emptyElementPosition) {
+  moveDown();
+}
+
+renderPuzzle()
+}
+
+
+
+function getRealPosition(displayedValue) {
+ return (puzzle.find((e)=> e.value === displayedValue)).position
 }
 
 function moveLeft() {
@@ -205,3 +240,50 @@ function getEmptyPuzzle() {
 function getPuzzleByPos(pos) {
   return puzzle.find((item) => item.position === pos)
 }
+
+
+//drag and drop
+//
+// function makeDraggable(e) {
+//   e.setAttribute('draggable', 'true');
+//
+//   e.onmouseover = function (event) {
+//     e.className = 'hold';
+//   };
+//
+//   e.onmousedown = function (event) {
+//     let shiftX = event.clientX - e.getBoundingClientRect().left;
+//     let shiftY = event.clientY - e.getBoundingClientRect().top;
+//     e.style.position = 'absolute';
+//     e.style.zIndex = 500;
+//     document.body.append(pic);
+//     e.className = 'grab';
+//
+//     moveAt(event.pageX, event.pageY);
+//
+//     function moveAt(pageX, pageY) {
+//       e.style.left = pageX - shiftX + 'px';
+//       e.style.top = pageY - shiftY + 'px';
+//     }
+//
+//     function onMouseMove(event) {
+//       moveAt(event.pageX, event.pageY);
+//     }
+//
+//     document.addEventListener('mousemove', onMouseMove);
+//
+//     document.onmouseup = function () {
+//       e.className = 'hold';
+//       document.removeEventListener('mousemove', onMouseMove);
+//       document.onmouseup = null;
+//     };
+//
+//     e.onmouseleave = function (event) {
+//       e.className = '';
+//     };
+//   };
+//
+//   e.ondragstart = function () {
+//     return false;
+//   };
+// }
