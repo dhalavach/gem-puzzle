@@ -3,20 +3,54 @@ var movesCounter = 0;
 movesCounterContainer.innerHTML = `<div class="moves-counter-container">Moves: ${movesCounter} </div>`
 document.body.appendChild(movesCounterContainer);
 
+const timer = document.createElement('div')
+timer.innerHTML = `<div class="timer">Time: <label id="minutes">00</label>:<label id="seconds">00</label></div>`
+document.body.appendChild(timer)
+
+const startButton = document.createElement('div');
+startButton.innerHTML = `<div class="start-button"><button>Shuffle and start</button></div>`;
+document.body.appendChild(startButton);
+
 const mainDiv = document.createElement('div');
 mainDiv.innerHTML = `<div id="puzzle-container"></div>`
 document.body.appendChild(mainDiv);
 
+
+
 const puzzleContainer = document.querySelector("#puzzle-container");
 const puzzleWidth = document.querySelector("#puzzle-container").clientWidth;
 const puzzleHeight = document.querySelector("#puzzle-container").clientHeight;
-const puzzle = [];
+const reloadButton = document.querySelector(".start-button")
+let puzzle = [];
 let size = 4;
 
 generatePuzzle();
 randomize();
 renderPuzzle();
 handleInput();
+
+reloadButton.addEventListener('click', reloadPuzzle)
+
+function reloadPuzzle() {
+  let old = document.querySelector("#puzzle-container");
+
+
+  let mainDiv = document.createElement('div');
+  mainDiv.innerHTML = `<div id="puzzle-container"></div>`
+  document.body.appendChild(mainDiv);
+
+  puzzle=[];
+  movesCounter = 0;
+  totalSeconds = 0;
+  setTime();
+
+
+  generatePuzzle();
+  randomize();
+  renderPuzzle();
+  handleInput();
+
+}
 
 function generatePuzzle() {
 
@@ -108,10 +142,15 @@ function getRandom() {
 function handleInput() {
   document.addEventListener('keydown', handleKeyDown);
   document.addEventListener('click', handleClick)
+  document.addEventListener('mousedown', preventDrag)
+}
+function preventDrag(e) {
+  e.preventDefault();
 }
 
 function handleKeyDown(e) {
   console.log(e.key)
+  e.preventDefault();
   switch (e.key) {
     case "ArrowLeft":
       moveLeft()
@@ -301,3 +340,24 @@ function getPuzzleByPos(pos) {
 //     return false;
 //   };
 // }
+
+
+let minutesLabel = document.getElementById("minutes");
+let secondsLabel = document.getElementById("seconds");
+let totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+}
+
+function pad(val) {
+  let valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
