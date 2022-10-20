@@ -563,3 +563,9 @@ body {
   background-color: #3fb0ac ;
 }
 
+.moves-counter-container {
+  margin: 1rem;
+  font-size: 1rem;
+  font-family: "Comic Sans MS";
+}
+

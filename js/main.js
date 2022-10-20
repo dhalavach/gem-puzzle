@@ -1,3 +1,12 @@
+const movesCounterContainer = document.createElement('div');
+var movesCounter = 0;
+movesCounterContainer.innerHTML = `<div class="moves-counter-container">Moves: ${movesCounter} </div>`
+document.body.appendChild(movesCounterContainer);
+
+const mainDiv = document.createElement('div');
+mainDiv.innerHTML = `<div id="puzzle-container"></div>`
+document.body.appendChild(mainDiv);
+
 const puzzleContainer = document.querySelector("#puzzle-container");
 const puzzleWidth = document.querySelector("#puzzle-container").clientWidth;
 const puzzleHeight = document.querySelector("#puzzle-container").clientHeight;
@@ -43,6 +52,8 @@ function renderPuzzle() {
     </div>
     `
   }
+    movesCounterContainer.innerHTML = `<div class="moves-counter-container">Moves: ${movesCounter} </div>`
+
   }
   let puzzleItems = document.querySelectorAll(".item");
   puzzleItems.forEach((item) => {
@@ -191,6 +202,9 @@ function swapPositions(firstPuzzle, secondPuzzle, isX = false) {
     firstPuzzle.y = secondPuzzle.y
     secondPuzzle.y = temp
   }
+
+  movesCounter++;
+
 }
 
 function getRightPuzzle() {
