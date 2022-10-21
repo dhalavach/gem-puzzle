@@ -18,11 +18,13 @@ document.body.appendChild(mainDiv);
 
 const puzzleSizeSelector = document.createElement('div');
 puzzleSizeSelector.id = "puzzle-size-selector";
-puzzleSizeSelector.innerHTML = `<span>Select size and restart: </span><button id="size-3-button">3x3</button> <button id="size-4-button">4x4</button><button id="size-5-button">5x5</button>`
+puzzleSizeSelector.innerHTML = `<span>Select size and restart: </span><button id="size-2-button">2x2</button><button id="size-3-button">3x3</button> <button id="size-4-button">4x4</button><button id="size-5-button">5x5</button>`
 document.body.appendChild(puzzleSizeSelector);
+const sizeTwoButton = document.querySelector("#size-2-button");
 const sizeThreeButton = document.querySelector("#size-3-button");
 const sizeFourButton = document.querySelector("#size-4-button");
 const sizeFiveButton = document.querySelector("#size-5-button");
+
 
 
 const puzzleContainer = document.querySelector("#puzzle-container");
@@ -37,19 +39,21 @@ randomize();
 renderPuzzle();
 handleInput();
 
-sizeThreeButton.addEventListener('click', setSize)
-sizeFourButton.addEventListener('click', setSize)
-sizeFiveButton.addEventListener('click', setSize);
+puzzleSizeSelector.addEventListener('click', setSize)
+
+
 function setSize(event) {
   puzzle=[];
   movesCounter = 0;
   totalSeconds = 0;
   let clickedButton = event.target.id;
-  if (clickedButton == "size-3-button") {
+  if (clickedButton == "size-2-button") {
+    size = 2;
+  } else if (clickedButton == "size-3-button") {
     size = 3;
-  } else if (clickedButton == "size-4-button") {
+  } else if(clickedButton =="size-4-button"){
     size = 4;
-  } else if(clickedButton =="size-5-button"){
+  } else if(clickedButton == "size-5-button"){
     size = 5;
   }
 
@@ -62,18 +66,6 @@ function setSize(event) {
 
 }
 
-function setSizeFour() {
-  puzzle=[];
-  movesCounter = 0;
-  totalSeconds = 0;
-  size = 4;
-
-  generatePuzzle();
-  randomize();
-  renderPuzzle();
-  setTime();
-  handleInput();
-}
 
 reloadButton.addEventListener('click', reloadPuzzle)
 
@@ -179,7 +171,7 @@ function getRandom() {
 
 function handleInput() {
   document.addEventListener('keydown', handleKeyDown);
-  document.addEventListener('click', handleClick)
+  puzzleContainer.addEventListener('click', handleClick)
   document.addEventListener('mousedown', preventDrag)
 }
 function preventDrag(e) {
@@ -225,7 +217,6 @@ if(clickedElementPosition + 1 === emptyElementPosition) {
 
 renderPuzzle()
 }
-
 
 
 function getRealPosition(displayedValue) {
@@ -281,6 +272,7 @@ function swapPositions(firstPuzzle, secondPuzzle, isX = false) {
   }
 
   movesCounter++;
+  checkWinCondition();
 
 }
 
@@ -333,62 +325,15 @@ function getPuzzleByPos(pos) {
 }
 
 
-//drag and drop
-//
-// function makeDraggable(e) {
-//   e.setAttribute('draggable', 'true');
-//
-//   e.onmouseover = function (event) {
-//     e.className = 'hold';
-//   };
-//
-//   e.onmousedown = function (event) {
-//     let shiftX = event.clientX - e.getBoundingClientRect().left;
-//     let shiftY = event.clientY - e.getBoundingClientRect().top;
-//     e.style.position = 'absolute';
-//     e.style.zIndex = 500;
-//     document.body.append(pic);
-//     e.className = 'grab';
-//
-//     moveAt(event.pageX, event.pageY);
-//
-//     function moveAt(pageX, pageY) {
-//       e.style.left = pageX - shiftX + 'px';
-//       e.style.top = pageY - shiftY + 'px';
-//     }
-//
-//     function onMouseMove(event) {
-//       moveAt(event.pageX, event.pageY);
-//     }
-//
-//     document.addEventListener('mousemove', onMouseMove);
-//
-//     document.onmouseup = function () {
-//       e.className = 'hold';
-//       document.removeEventListener('mousemove', onMouseMove);
-//       document.onmouseup = null;
-//     };
-//
-//     e.onmouseleave = function (event) {
-//       e.className = '';
-//     };
-//   };
-//
-//   e.ondragstart = function () {
-//     return false;
-//   };
-// }
-
-
 let minutesLabel = document.getElementById("minutes");
 let secondsLabel = document.getElementById("seconds");
 let totalSeconds = 0;
-setInterval(setTime, 1000);
+let timerInterval = setInterval(setTime, 1000);
 
 function setTime() {
-  ++totalSeconds;
+  totalSeconds++;
   secondsLabel.innerHTML = pad(totalSeconds % 60);
-  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+    minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
 }
 
 function pad(val) {
@@ -397,5 +342,15 @@ function pad(val) {
     return "0" + valString;
   } else {
     return valString;
+  }
+}
+
+function checkWinCondition() {
+
+  const isPositionEqualToValue = (item) => item.value === item.position;
+  const victoryStatus = puzzle.every(isPositionEqualToValue);
+  if (victoryStatus) {
+    console.log(`Hooray! You solved the puzzle in ${movesCounter} move(s) in ${totalSeconds>=60? (totalSeconds / 60) + `minute(s) and`: ""}  ${totalSeconds % 60} seconds` );
+    clearInterval(timerInterval);
   }
 }
