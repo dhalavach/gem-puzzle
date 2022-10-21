@@ -12,7 +12,8 @@ startButton.innerHTML = `<div class="start-button"><button>Shuffle and start</bu
 document.body.appendChild(startButton);
 
 const mainDiv = document.createElement('div');
-mainDiv.innerHTML = `<div id="puzzle-container"></div>`
+//mainDiv.innerHTML = `<div id="puzzle-container"></div>`
+mainDiv.id="puzzle-container";
 document.body.appendChild(mainDiv);
 
 
@@ -32,19 +33,11 @@ handleInput();
 reloadButton.addEventListener('click', reloadPuzzle)
 
 function reloadPuzzle() {
-  let old = document.querySelector("#puzzle-container");
-
-
-  let mainDiv = document.createElement('div');
-  mainDiv.innerHTML = `<div id="puzzle-container"></div>`
-  document.body.appendChild(mainDiv);
-
   puzzle=[];
   movesCounter = 0;
   totalSeconds = 0;
+
   setTime();
-
-
   generatePuzzle();
   randomize();
   renderPuzzle();
