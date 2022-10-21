@@ -603,3 +603,13 @@ body {
 
 }
 
+#toggle-sound-button {
+  margin: 1rem;
+
+}
+
+label {
+  font-size: 1rem;
+  font-family: "Comic Sans MS";
+}
+

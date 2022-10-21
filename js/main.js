@@ -7,6 +7,11 @@ const timer = document.createElement('div')
 timer.innerHTML = `<div class="timer">Time: <label id="minutes">00</label>:<label id="seconds">00</label></div>`
 document.body.appendChild(timer)
 
+const toggleSoundButton = document.createElement('div');
+toggleSoundButton.innerHTML = `<input type="checkbox" id="toggle-sound-button" name="toggle-sound" checked>
+  <label htmlFor="toggle">Sound on/off</label>`
+document.body.appendChild(toggleSoundButton);
+
 const startButton = document.createElement('div');
 startButton.innerHTML = `<div class="start-button"><button>Shuffle and start</button></div>`;
 document.body.appendChild(startButton);
@@ -20,10 +25,7 @@ const puzzleSizeSelector = document.createElement('div');
 puzzleSizeSelector.id = "puzzle-size-selector";
 puzzleSizeSelector.innerHTML = `<span>Select size and restart: </span><button id="size-2-button">2x2</button><button id="size-3-button">3x3</button> <button id="size-4-button">4x4</button><button id="size-5-button">5x5</button>`
 document.body.appendChild(puzzleSizeSelector);
-const sizeTwoButton = document.querySelector("#size-2-button");
-const sizeThreeButton = document.querySelector("#size-3-button");
-const sizeFourButton = document.querySelector("#size-4-button");
-const sizeFiveButton = document.querySelector("#size-5-button");
+
 
 
 
@@ -272,6 +274,7 @@ function swapPositions(firstPuzzle, secondPuzzle, isX = false) {
   }
 
   movesCounter++;
+  if ((document.querySelector("#toggle-sound-button")).checked) playSound();
   checkWinCondition();
 
 }
@@ -350,7 +353,15 @@ function checkWinCondition() {
   const isPositionEqualToValue = (item) => item.value === item.position;
   const victoryStatus = puzzle.every(isPositionEqualToValue);
   if (victoryStatus) {
-    console.log(`Hooray! You solved the puzzle in ${movesCounter} move(s) in ${totalSeconds>=60? (totalSeconds / 60) + `minute(s) and`: ""}  ${totalSeconds % 60} seconds` );
+    alert(`Hooray! You solved the puzzle in ${movesCounter} move(s) in${totalSeconds>=60? (totalSeconds / 60) + `minute(s) and`: ""}  ${totalSeconds % 60} second(s)` );
     clearInterval(timerInterval);
   }
 }
+
+
+function playSound() {
+  let swapSound = new Audio("../switch-sound.wav")
+  swapSound.play();
+}
+
+
