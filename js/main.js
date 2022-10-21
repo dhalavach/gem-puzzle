@@ -16,6 +16,13 @@ const mainDiv = document.createElement('div');
 mainDiv.id="puzzle-container";
 document.body.appendChild(mainDiv);
 
+const puzzleSizeSelector = document.createElement('div');
+puzzleSizeSelector.id = "puzzle-size-selector";
+puzzleSizeSelector.innerHTML = `<span>Select size and restart: </span><button id="size-3-button">3x3</button> <button id="size-4-button">4x4</button><button id="size-5-button">5x5</button>`
+document.body.appendChild(puzzleSizeSelector);
+const sizeThreeButton = document.querySelector("#size-3-button");
+const sizeFourButton = document.querySelector("#size-4-button");
+const sizeFiveButton = document.querySelector("#size-5-button");
 
 
 const puzzleContainer = document.querySelector("#puzzle-container");
@@ -29,6 +36,44 @@ generatePuzzle();
 randomize();
 renderPuzzle();
 handleInput();
+
+sizeThreeButton.addEventListener('click', setSize)
+sizeFourButton.addEventListener('click', setSize)
+sizeFiveButton.addEventListener('click', setSize);
+function setSize(event) {
+  puzzle=[];
+  movesCounter = 0;
+  totalSeconds = 0;
+  let clickedButton = event.target.id;
+  if (clickedButton == "size-3-button") {
+    size = 3;
+  } else if (clickedButton == "size-4-button") {
+    size = 4;
+  } else if(clickedButton =="size-5-button"){
+    size = 5;
+  }
+
+
+  generatePuzzle();
+  randomize();
+  renderPuzzle();
+  setTime();
+  handleInput();
+
+}
+
+function setSizeFour() {
+  puzzle=[];
+  movesCounter = 0;
+  totalSeconds = 0;
+  size = 4;
+
+  generatePuzzle();
+  randomize();
+  renderPuzzle();
+  setTime();
+  handleInput();
+}
 
 reloadButton.addEventListener('click', reloadPuzzle)
 

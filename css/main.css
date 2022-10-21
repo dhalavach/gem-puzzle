@@ -592,3 +592,14 @@ body {
 
 }
 
+#puzzle-size-selector {
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Comic Sans MS";
+}
+#puzzle-size-selector button {
+  background-color: aliceblue;
+  margin-left: 1rem;
+
+}
+
