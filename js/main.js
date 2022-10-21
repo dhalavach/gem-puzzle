@@ -30,8 +30,8 @@ document.body.appendChild(puzzleSizeSelector);
 
 
 const puzzleContainer = document.querySelector("#puzzle-container");
-const puzzleWidth = document.querySelector("#puzzle-container").clientWidth;
-const puzzleHeight = document.querySelector("#puzzle-container").clientHeight;
+let puzzleWidth = document.querySelector("#puzzle-container").clientWidth;
+let puzzleHeight = document.querySelector("#puzzle-container").clientHeight;
 const reloadButton = document.querySelector(".start-button")
 let puzzle = [];
 let size = 4;
@@ -68,7 +68,6 @@ function setSize(event) {
 
 }
 
-
 reloadButton.addEventListener('click', reloadPuzzle)
 
 function reloadPuzzle() {
@@ -85,19 +84,14 @@ function reloadPuzzle() {
 }
 
 function generatePuzzle() {
-
-
   for (let i = 1; i <= size * size; i++) {
-
     puzzle.push({
       value: i,
       position: i,
       x: (getColumn(i) - 1) * ((puzzleWidth)/size) , //2px border width
       y: (getRow(i) - 1) * ((puzzleHeight)/size) ,
       disabled: false,
-
     })
-
   }
 }
 
@@ -364,4 +358,24 @@ function playSound() {
   swapSound.play();
 }
 
+function resizePuzzle() {
+  let puzzleWidth = document.querySelector("#puzzle-container").clientWidth;
+  let puzzleHeight = document.querySelector("#puzzle-container").clientHeight;
+
+  renderPuzzle();
+
+
+
+  let puzzleItems = document.querySelectorAll(".item");
+  puzzleItems.forEach((item) => {
+    item.style.width = `${puzzleWidth/size}px`;
+    item.style.height = `${puzzleHeight/size}px`;
+  })
+  puzzle.forEach((item) => {
+    item.x = (getColumn(item.value) - 1) * ((puzzleWidth)/size);
+    item.y = (getRow(item.value) - 1) * ((puzzleWidth)/size);
+  })
+}
+
+window.onresize = resizePuzzle;
 
