@@ -81,6 +81,11 @@ function reloadPuzzle() {
   renderPuzzle();
   handleInput();
 
+  if (!timerInterval) {
+     timerInterval = setInterval(setTime, 1000);
+
+  }
+
 }
 
 function generatePuzzle() {
@@ -349,6 +354,7 @@ function checkWinCondition() {
   if (victoryStatus) {
     alert(`Hooray! You solved the puzzle in ${movesCounter} move(s) in${totalSeconds>=60? (totalSeconds / 60) + `minute(s) and`: ""}  ${totalSeconds % 60} second(s)` );
     clearInterval(timerInterval);
+    timerInterval = null;
   }
 }
 
