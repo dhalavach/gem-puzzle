@@ -26,6 +26,10 @@ puzzleSizeSelector.id = "puzzle-size-selector";
 puzzleSizeSelector.innerHTML = `<span>Select size and restart: </span><button id="size-2-button">2x2</button><button id="size-3-button">3x3</button> <button id="size-4-button">4x4</button><button id="size-5-button">5x5</button>`
 document.body.appendChild(puzzleSizeSelector);
 
+const attempts = document.createElement('div');
+attempts.innerHTML = `<div class="attempts-container">Attempts</div>`
+document.body.appendChild(attempts);
+
 const puzzleContainer = document.querySelector("#puzzle-container");
 let puzzleWidth = document.querySelector("#puzzle-container").clientWidth;
 let puzzleHeight = document.querySelector("#puzzle-container").clientHeight;
@@ -338,7 +342,7 @@ function pad(val) {
     return valString;
   }
 }
-
+let attemptsCounter = 0;
 function checkWinCondition() {
   const isPositionEqualToValue = (item) => item.value === item.position;
   const victoryStatus = puzzle.every(isPositionEqualToValue);
@@ -346,6 +350,14 @@ function checkWinCondition() {
     alert(`Hooray! You solved the puzzle in ${movesCounter} move(s) in${totalSeconds>=60? (totalSeconds / 60) + `minute(s) and`: ""}  ${totalSeconds % 60} second(s)` );
     clearInterval(timerInterval);
     timerInterval = null;
+    attemptsCounter++;
+    localStorage.setItem('lastAttemptMoves', movesCounter);
+    localStorage.setItem('lastAttemptTime', `${Math.floor(totalSeconds/60)} minute(s), ${totalSeconds%60} second(s)`);
+    let lastAttempt = document.createElement('div');
+    lastAttempt.classList.add("attempt")
+    lastAttempt.innerHTML = `${attemptsCounter} : ${size}x${size} puzzle solved in ${localStorage.getItem('lastAttemptMoves')} move(s) in ${localStorage.getItem('lastAttemptTime')}`
+    attempts.appendChild(lastAttempt)
+
   }
 }
 
