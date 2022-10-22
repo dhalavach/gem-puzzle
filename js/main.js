@@ -26,9 +26,6 @@ puzzleSizeSelector.id = "puzzle-size-selector";
 puzzleSizeSelector.innerHTML = `<span>Select size and restart: </span><button id="size-2-button">2x2</button><button id="size-3-button">3x3</button> <button id="size-4-button">4x4</button><button id="size-5-button">5x5</button>`
 document.body.appendChild(puzzleSizeSelector);
 
-
-
-
 const puzzleContainer = document.querySelector("#puzzle-container");
 let puzzleWidth = document.querySelector("#puzzle-container").clientWidth;
 let puzzleHeight = document.querySelector("#puzzle-container").clientHeight;
@@ -42,7 +39,6 @@ renderPuzzle();
 handleInput();
 
 puzzleSizeSelector.addEventListener('click', setSize)
-
 
 function setSize(event) {
   puzzle=[];
@@ -59,7 +55,6 @@ function setSize(event) {
     size = 5;
   }
 
-
   generatePuzzle();
   randomize();
   renderPuzzle();
@@ -69,7 +64,6 @@ function setSize(event) {
   if (!timerInterval) {
     timerInterval = setInterval(setTime, 1000);
   }
-
 }
 
 reloadButton.addEventListener('click', reloadPuzzle)
@@ -130,13 +124,10 @@ function renderPuzzle() {
 
 
   })
-
-
 }
 
 function getRow(position) {
   return Math.ceil(position / size);
-
 }
 
 function getColumn(position) {
@@ -154,13 +145,10 @@ function randomize() {
   for (let item of puzzle) {
     item.value = randomValues[i];
     i++;
-
-
   }
 
   const emptyPuzzleItem = puzzle.find((item) => item.value === size * size)
   emptyPuzzleItem.disabled = true;
-
 }
 
 function getRandom() {
@@ -219,9 +207,8 @@ if(clickedElementPosition + 1 === emptyElementPosition) {
   moveDown();
 }
 
-renderPuzzle()
+  renderPuzzle()
 }
-
 
 function getRealPosition(displayedValue) {
  return (puzzle.find((e)=> e.value === displayedValue)).position
@@ -234,6 +221,7 @@ function moveLeft() {
     swapPositions(emptyPuzzle, rightPuzzle, true)
   }
 }
+
 function moveRight() {
   const emptyPuzzle = getEmptyPuzzle()
   const leftPuzzle = getLeftPuzzle()
@@ -241,6 +229,7 @@ function moveRight() {
     swapPositions(emptyPuzzle, leftPuzzle, true)
   }
 }
+
 function moveUp() {
   const emptyPuzzle = getEmptyPuzzle()
   const belowPuzzle = getBelowPuzzle()
@@ -248,6 +237,7 @@ function moveUp() {
     swapPositions(emptyPuzzle, belowPuzzle, false)
   }
 }
+
 function moveDown() {
   const emptyPuzzle = getEmptyPuzzle()
   const abovePuzzle = getAbovePuzzle()
@@ -329,7 +319,6 @@ function getPuzzleByPos(pos) {
   return puzzle.find((item) => item.position === pos)
 }
 
-
 let minutesLabel = document.getElementById("minutes");
 let secondsLabel = document.getElementById("seconds");
 let totalSeconds = 0;
@@ -351,7 +340,6 @@ function pad(val) {
 }
 
 function checkWinCondition() {
-
   const isPositionEqualToValue = (item) => item.value === item.position;
   const victoryStatus = puzzle.every(isPositionEqualToValue);
   if (victoryStatus) {
@@ -372,8 +360,6 @@ function resizePuzzle() {
   let puzzleHeight = document.querySelector("#puzzle-container").clientHeight;
 
   renderPuzzle();
-
-
 
   let puzzleItems = document.querySelectorAll(".item");
   puzzleItems.forEach((item) => {
