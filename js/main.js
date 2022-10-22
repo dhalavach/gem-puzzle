@@ -66,6 +66,10 @@ function setSize(event) {
   setTime();
   handleInput();
 
+  if (!timerInterval) {
+    timerInterval = setInterval(setTime, 1000);
+  }
+
 }
 
 reloadButton.addEventListener('click', reloadPuzzle)
@@ -83,7 +87,6 @@ function reloadPuzzle() {
 
   if (!timerInterval) {
      timerInterval = setInterval(setTime, 1000);
-
   }
 
 }
