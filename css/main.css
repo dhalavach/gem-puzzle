@@ -625,6 +625,10 @@ label {
   font-family: "Comic Sans MS";
 }
 
+.animated {
+  transition-property: transform;
+  transition-duration: 2s;
+}
 
 
 

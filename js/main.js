@@ -129,14 +129,14 @@ function renderPuzzle() {
   for (let item of puzzle) {
   if (item.disabled ){
     puzzleContainer.innerHTML += `
-    <div class = "item" id="disabled" style="left: ${item.x}px; top: ${item.y}px; background-color: white">
+    <div class = "item animated" id="disabled" style="left: ${item.x}px; top: ${item.y}px; background-color: white">
 
     </div>
     `
   } else {
 
     puzzleContainer.innerHTML += `
-    <div class = "item" style="left: ${item.x}px; top: ${item.y}px">
+    <div class = "item animated" style="left: ${item.x}px; top: ${item.y}px">
     ${item.value}
     </div>
     `
@@ -294,6 +294,7 @@ function swapPositions(firstPuzzle, secondPuzzle, isX = false) {
 
   movesCounter++;
   if ((document.querySelector("#toggle-sound-button")).checked) playSound();
+
   checkWinCondition();
 
 }
