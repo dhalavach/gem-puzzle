@@ -1,3 +1,26 @@
+const saveGame = document.createElement('span');
+saveGame.innerHTML = `<button id="save-game">Save Game</button>`
+document.body.appendChild(saveGame);
+saveGame.addEventListener('click', save);
+function save() {
+  let stringifiedPuzzle = JSON.stringify(puzzle)
+  localStorage.setItem('savedGameSlot', stringifiedPuzzle);
+}
+
+const loadGame = document.createElement('span');
+loadGame.innerHTML = `<button id="load-game">Load Game</button>`
+document.body.appendChild(loadGame);
+loadGame.addEventListener('click', load);
+function load() {
+let gameToLoadStringified = localStorage.getItem('savedGameSlot');
+ puzzle = JSON.parse(gameToLoadStringified);
+ size = Math.sqrt(puzzle.length)
+
+renderPuzzle();
+
+}
+
+
 const movesCounterContainer = document.createElement('div');
 var movesCounter = 0;
 movesCounterContainer.innerHTML = `<div class="moves-counter-container">Moves: ${movesCounter} </div>`

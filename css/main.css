@@ -619,6 +619,12 @@ label {
   font-family: "Comic Sans MS";
 }
 
+#load-game, #save-game {
+  margin: 1rem;
+  font-size: 1rem;
+  font-family: "Comic Sans MS";
+}
+
 
 
 
