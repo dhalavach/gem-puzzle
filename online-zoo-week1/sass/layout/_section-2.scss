@@ -1,0 +1,60 @@
+/* section 2 start */
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 140px;
+    padding-bottom: 180px;
+
+}
+
+.section-2-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.section-2__bamboo-cap {
+    width: 609px;
+    height: 403px;
+    background-image: url("/assets/images/bamboo-cap.png");
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.section-2__text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 5.44em;
+    padding-right: 5.44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section-2__text p {
+    @include smallparagraph-font;
+}
+
+.section-2__subtitle {
+    @include subtitle-font;
+}
+
+.section-2__text h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.section-2__flower {
+    width: 27%;
+    height: 605px;
+    margin-top: 0.75em;
+    background-image: url("/assets/images/flower_foto1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* section 2 end */

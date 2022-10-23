@@ -1,0 +1,68 @@
+// Base
+@import "base/normalize";
+@import "base/typography";
+
+
+// Abstract
+@import "abstract/variables";
+@import "abstract/colors";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+
+//Layout
+@import "layout/container";
+@import "layout/columns";
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/section-1";
+@import "layout/section-2";
+@import "layout/section-3";
+@import "layout/section-4";
+@import "layout/section-5";
+@import "layout/footer";
+@import "layout/small-desktop";
+@import "layout/tablet";
+@import "layout/mobile";
+
+
+
+// Components
+@import "components/animal-food-icon";
+@import "components/logo";
+@import "components/button";
+@import "components/testimonial";
+@import "components/widget";
+@import "components/burger";
+@import "components/image-container";
+
+// Pages
+@import "pages/donate";
+
+
+body {
+    font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+
+h1 {
+    @include h1;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.body {
+    width: 100vw;
+}

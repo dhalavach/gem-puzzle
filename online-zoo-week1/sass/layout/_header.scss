@@ -1,0 +1,65 @@
+/* header start */
+
+.header {
+   
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    background-color: $black-header;
+    height: 5rem;
+
+}
+
+header div {
+    @include header-font;
+}
+
+.nav__link {
+    @include header-font;
+    text-decoration: none;
+    margin-left: 1.875em;
+    flex-shrink: 0;
+
+}
+
+.nav__link:hover {
+    color: $brand-main;
+}
+
+.logo {
+    width: 5rem;
+    height: 3rem;
+    margin-left: 14rem;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.19rem;
+    line-height: 120%;
+    text-align: center;
+    color: $white;
+    border: 2px solid $white;
+    background-image: url("/assets/images/bamboo.svg");
+    background-repeat: no-repeat;
+    background-position: 10% bottom;
+}
+
+.menu__box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    list-style: none;
+}
+
+.menu__box li {
+    flex-shrink: 0;
+}
+
+#menu__toggle {
+    display: none;
+}
+
+/* header end */

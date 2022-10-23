@@ -1,0 +1,15 @@
+.logo {
+    width: 5rem;
+    height: 3rem;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.19rem;
+    line-height: 120%;
+    text-align: center;
+    color: $white;
+    border: 2px solid $white;
+    background-image: url("/assets/images/bamboo.svg");
+    background-repeat: no-repeat;
+    background-position: 10% bottom;
+}

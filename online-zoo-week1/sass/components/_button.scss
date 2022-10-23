@@ -1,0 +1,40 @@
+.button-large {
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    span {
+        @include button-font;
+    }
+
+    &:hover {
+        background: $brand-active;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .button--mobile {
+//     width: 298px;
+//     height: 54px;
+
+//     span {
+//         font-family: 'Roboto';
+//         font-style: normal;
+//         font-weight: 500;
+//         font-size: 16px;
+//         line-height: 140%;
+//         text-align: center;
+//         text-transform: uppercase;
+//         color: #FFFFFF;
+//     }
+// }
