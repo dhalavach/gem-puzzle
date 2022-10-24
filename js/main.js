@@ -1,3 +1,26 @@
+const saveGame = document.createElement('span');
+saveGame.innerHTML = `<button id="save-game">Save Game</button>`
+document.body.appendChild(saveGame);
+saveGame.addEventListener('click', save);
+function save() {
+  let stringifiedPuzzle = JSON.stringify(puzzle)
+  localStorage.setItem('savedGameSlot', stringifiedPuzzle);
+}
+
+const loadGame = document.createElement('span');
+loadGame.innerHTML = `<button id="load-game">Load Game</button>`
+document.body.appendChild(loadGame);
+loadGame.addEventListener('click', load);
+function load() {
+let gameToLoadStringified = localStorage.getItem('savedGameSlot');
+ puzzle = JSON.parse(gameToLoadStringified);
+ size = Math.sqrt(puzzle.length)
+
+renderPuzzle();
+
+}
+
+
 const movesCounterContainer = document.createElement('div');
 var movesCounter = 0;
 movesCounterContainer.innerHTML = `<div class="moves-counter-container">Moves: ${movesCounter} </div>`
@@ -26,8 +49,9 @@ puzzleSizeSelector.id = "puzzle-size-selector";
 puzzleSizeSelector.innerHTML = `<span>Select size and restart: </span><button id="size-2-button">2x2</button><button id="size-3-button">3x3</button> <button id="size-4-button">4x4</button><button id="size-5-button">5x5</button>`
 document.body.appendChild(puzzleSizeSelector);
 
-
-
+const attempts = document.createElement('div');
+attempts.innerHTML = `<div class="attempts-container">Attempts</div>`
+document.body.appendChild(attempts);
 
 const puzzleContainer = document.querySelector("#puzzle-container");
 let puzzleWidth = document.querySelector("#puzzle-container").clientWidth;
@@ -42,7 +66,6 @@ renderPuzzle();
 handleInput();
 
 puzzleSizeSelector.addEventListener('click', setSize)
-
 
 function setSize(event) {
   puzzle=[];
@@ -59,7 +82,6 @@ function setSize(event) {
     size = 5;
   }
 
-
   generatePuzzle();
   randomize();
   renderPuzzle();
@@ -69,7 +91,6 @@ function setSize(event) {
   if (!timerInterval) {
     timerInterval = setInterval(setTime, 1000);
   }
-
 }
 
 reloadButton.addEventListener('click', reloadPuzzle)
@@ -108,14 +129,14 @@ function renderPuzzle() {
   for (let item of puzzle) {
   if (item.disabled ){
     puzzleContainer.innerHTML += `
-    <div class = "item" id="disabled" style="left: ${item.x}px; top: ${item.y}px; background-color: white">
+    <div class = "item animated" id="disabled" style="left: ${item.x}px; top: ${item.y}px; background-color: white">
 
     </div>
     `
   } else {
 
     puzzleContainer.innerHTML += `
-    <div class = "item" style="left: ${item.x}px; top: ${item.y}px">
+    <div class = "item animated" style="left: ${item.x}px; top: ${item.y}px">
     ${item.value}
     </div>
     `
@@ -130,13 +151,10 @@ function renderPuzzle() {
 
 
   })
-
-
 }
 
 function getRow(position) {
   return Math.ceil(position / size);
-
 }
 
 function getColumn(position) {
@@ -154,13 +172,10 @@ function randomize() {
   for (let item of puzzle) {
     item.value = randomValues[i];
     i++;
-
-
   }
 
   const emptyPuzzleItem = puzzle.find((item) => item.value === size * size)
   emptyPuzzleItem.disabled = true;
-
 }
 
 function getRandom() {
@@ -219,9 +234,8 @@ if(clickedElementPosition + 1 === emptyElementPosition) {
   moveDown();
 }
 
-renderPuzzle()
+  renderPuzzle()
 }
-
 
 function getRealPosition(displayedValue) {
  return (puzzle.find((e)=> e.value === displayedValue)).position
@@ -234,6 +248,7 @@ function moveLeft() {
     swapPositions(emptyPuzzle, rightPuzzle, true)
   }
 }
+
 function moveRight() {
   const emptyPuzzle = getEmptyPuzzle()
   const leftPuzzle = getLeftPuzzle()
@@ -241,6 +256,7 @@ function moveRight() {
     swapPositions(emptyPuzzle, leftPuzzle, true)
   }
 }
+
 function moveUp() {
   const emptyPuzzle = getEmptyPuzzle()
   const belowPuzzle = getBelowPuzzle()
@@ -248,6 +264,7 @@ function moveUp() {
     swapPositions(emptyPuzzle, belowPuzzle, false)
   }
 }
+
 function moveDown() {
   const emptyPuzzle = getEmptyPuzzle()
   const abovePuzzle = getAbovePuzzle()
@@ -277,6 +294,7 @@ function swapPositions(firstPuzzle, secondPuzzle, isX = false) {
 
   movesCounter++;
   if ((document.querySelector("#toggle-sound-button")).checked) playSound();
+
   checkWinCondition();
 
 }
@@ -329,7 +347,6 @@ function getPuzzleByPos(pos) {
   return puzzle.find((item) => item.position === pos)
 }
 
-
 let minutesLabel = document.getElementById("minutes");
 let secondsLabel = document.getElementById("seconds");
 let totalSeconds = 0;
@@ -349,15 +366,22 @@ function pad(val) {
     return valString;
   }
 }
-
+let attemptsCounter = 0;
 function checkWinCondition() {
-
   const isPositionEqualToValue = (item) => item.value === item.position;
   const victoryStatus = puzzle.every(isPositionEqualToValue);
   if (victoryStatus) {
     alert(`Hooray! You solved the puzzle in ${movesCounter} move(s) in${totalSeconds>=60? (totalSeconds / 60) + `minute(s) and`: ""}  ${totalSeconds % 60} second(s)` );
     clearInterval(timerInterval);
     timerInterval = null;
+    attemptsCounter++;
+    localStorage.setItem('lastAttemptMoves', movesCounter);
+    localStorage.setItem('lastAttemptTime', `${Math.floor(totalSeconds/60)} minute(s), ${totalSeconds%60} second(s)`);
+    let lastAttempt = document.createElement('div');
+    lastAttempt.classList.add("attempt")
+    lastAttempt.innerHTML = `${attemptsCounter} : ${size}x${size} puzzle solved in ${localStorage.getItem('lastAttemptMoves')} move(s) in ${localStorage.getItem('lastAttemptTime')}`
+    attempts.appendChild(lastAttempt)
+
   }
 }
 
@@ -372,8 +396,6 @@ function resizePuzzle() {
   let puzzleHeight = document.querySelector("#puzzle-container").clientHeight;
 
   renderPuzzle();
-
-
 
   let puzzleItems = document.querySelectorAll(".item");
   puzzleItems.forEach((item) => {
